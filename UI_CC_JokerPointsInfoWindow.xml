@@ -1,0 +1,1992 @@
+<?xml version="1.0"?>
+<asset assetType="sceneObject">
+	<!--comics: 2-->
+	<!--fixes: 5-->
+	<!--gears: 1-->
+	<!--hs: 20-->
+	<!--m3c: 4-->
+	<!--quests: 1-->
+	<!--rev: 16-->
+	<!--roomDesign: 7-->
+	<!--vso: 69-->
+	<!--windowManagement: 2-->
+	<root name="UI_CollectibleCards_JokerTokenInfo">
+		<behaviours type="screenBoard">
+			<ptr isAutoUpdatable="true" refferenceH="750" refferenceW="1366">
+				<uid entityId="84774007" />
+			</ptr>
+		</behaviours>
+		<behaviours type="input">
+			<ptr>
+				<uid entityId="2732259070" />
+			</ptr>
+		</behaviours>
+		<behaviours type="layout">
+			<ptr>
+				<uid entityId="2240372944" />
+			</ptr>
+		</behaviours>
+		<behaviours type="button">
+			<ptr>
+				<uid entityId="1102398733" />
+			</ptr>
+		</behaviours>
+		<behaviours type="windowAnimationData">
+			<ptr>
+				<animationTargets>
+					<onClose id="JokerTokenInfo_Close" id..editor..ref="assetType@animationClip" />
+					<onHide id="JokerTokenInfo_Close" id..editor..ref="assetType@animationClip" />
+					<onOpen id="JokerTokenInfo_Open" id..editor..ref="assetType@animationClip" />
+					<onShow id="JokerPointsInfoWindow_Idle" id..editor..ref="assetType@animationClip" />
+					<target path="84833330" />
+				</animationTargets>
+				<uid entityId="998198952" />
+			</ptr>
+		</behaviours>
+		<behaviours type="baseInfoWindow">
+			<ptr>
+				<closeButton path="4204954604" />
+				<uid entityId="1373393730" />
+			</ptr>
+		</behaviours>
+		<behaviours type="soundController">
+			<ptr>
+				<uid entityId="3863835589" />
+			</ptr>
+		</behaviours>
+		<behaviours type="iCSController">
+			<ptr autoPlay="true">
+				<ics id="ICS_CC_JokerTokenInfo" id..editor..ref="assetType@interactiveCutScene" />
+				<uid entityId="3525535818" />
+			</ptr>
+		</behaviours>
+		<behaviours type="gardenToggle">
+			<ptr>
+				<uid entityId="4128251380" />
+			</ptr>
+		</behaviours>
+		<behaviours type="animation">
+			<ptr>
+				<animationClip id="JokerTokenInfo_Open" id..editor..ref="assetType@animationClip" />
+				<remoteNodeLocator />
+				<uid entityId="84833330" />
+			</ptr>
+		</behaviours>
+		<children name="Scaler">
+			<behaviours type="deviceScaleTuner">
+				<ptr tabletScale="0.8">
+					<uid entityId="2047805899" />
+				</ptr>
+			</behaviours>
+			<children name="Window">
+				<behaviours type="anchoredElement">
+					<ptr>
+						<anchorTarget path="84774007" />
+						<horizontalAnchor nrp_2="1.0" />
+						<normalizedPivot x="0.5" y="0.5" />
+						<uid entityId="723365526" />
+						<verticalAnchor nrp_2="1.0" />
+					</ptr>
+				</behaviours>
+				<behaviours type="animation">
+					<ptr mode="Loop">
+						<animationClip id="JokerPointsInfoWindow_Idle" id..editor..ref="assetType@animationClip" />
+						<remoteNodeLocator />
+						<uid entityId="3503740110" />
+					</ptr>
+				</behaviours>
+				<behaviours type="color">
+					<ptr color="#FFFFFF00">
+						<uid entityId="699857813" />
+					</ptr>
+				</behaviours>
+				<children name="Background">
+					<behaviours type="anchoredElement">
+						<ptr>
+							<anchorTarget path="723365526" />
+							<horizontalAnchor nrp_2="1.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="1692691783" />
+							<verticalAnchor nrp_2="1.0" />
+						</ptr>
+					</behaviours>
+					<behaviours type="color">
+						<ptr>
+							<uid entityId="2507043310" />
+						</ptr>
+					</behaviours>
+					<children name="PatternSetter">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="1692691783" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-402.0" offset_2="500.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="2088927724" />
+								<verticalAnchor nrp_1="0.5" offset_1="-188.0" offset_2="500.0" />
+							</ptr>
+						</behaviours>
+						<behaviours type="rectMaskControl">
+							<ptr>
+								<components path="2179973450" />
+								<uid entityId="1922313313" />
+							</ptr>
+						</behaviours>
+						<transform />
+						<uid entityId="4049814704" />
+					</children>
+					<children name="Back">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="1692691783" />
+								<horizontalAnchor nrp_2="1.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="4126127102" />
+								<verticalAnchor nrp_2="1.0" />
+							</ptr>
+						</behaviours>
+						<component type="image">
+							<ptr fitPolicy="Stretch">
+								<material>
+									<materialRef id="CC_CardsPattern" id..editor..ref="assetType@material" />
+								</material>
+								<spriteOrTexture id="UI_CC_Background" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+								<uid entityId="2179973450" />
+							</ptr>
+						</component>
+						<transform />
+						<uid entityId="193648434" />
+					</children>
+					<children name="Shelves">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="1692691783" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-50.0" offset_2="100.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="2441918756" />
+								<verticalAnchor nrp_1="0.5" offset_1="-50.0" offset_2="100.0" />
+							</ptr>
+						</behaviours>
+						<children name="Shelf_1">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2441918756" />
+									<horizontalAnchor nrp_1="0.5" offset_1="-607.0" offset_2="1214.0" />
+									<normalizedPivot x="0.5" y="0.5" />
+									<uid entityId="1027430729" />
+									<verticalAnchor nrp_1="0.5" offset_1="-83.5" offset_2="295.0" />
+								</ptr>
+							</behaviours>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_CC_Shelf_1" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="3028663736" />
+								</ptr>
+							</component>
+							<transform />
+							<uid entityId="593437599" />
+						</children>
+						<children name="Shelf_2">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="2441918756" />
+									<horizontalAnchor nrp_1="0.5" offset_1="-607.0" offset_2="1214.0" />
+									<normalizedPivot x="0.5" y="0.5" />
+									<uid entityId="2054738293" />
+									<verticalAnchor nrp_1="0.5" offset_1="-367.0" offset_2="326.0" />
+								</ptr>
+							</behaviours>
+							<component type="image">
+								<ptr fitPolicy="Stretch">
+									<spriteOrTexture id="UI_CC_Shelf_2" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="1847186769" />
+								</ptr>
+							</component>
+							<transform />
+							<uid entityId="1692012617" />
+						</children>
+						<transform />
+						<uid entityId="2218588389" />
+					</children>
+					<children name="BlackFade">
+						<behaviours type="animation">
+							<ptr normalizeWeights="false" startMode="Manual">
+								<remoteNodeLocator />
+								<uid entityId="2583027452" />
+							</ptr>
+						</behaviours>
+						<behaviours type="windowAnimationData">
+							<ptr>
+								<animationTargets>
+									<onClose id="UI_CC_JokerTokeninfo_Fader_Hide" id..editor..ref="assetType@animationClip" />
+									<onHide id="UI_CC_Fader_Hide" id..editor..ref="assetType@animationClip" />
+									<onOpen id="UI_CC_Fader_Show" id..editor..ref="assetType@animationClip" />
+									<onShow id="UI_CC_Fader_Show" id..editor..ref="assetType@animationClip" />
+									<target path="2583027452" />
+								</animationTargets>
+								<uid entityId="1510472319" />
+							</ptr>
+						</behaviours>
+						<component type="blackFade">
+							<ptr color="#000000C8">
+								<uid entityId="3022780131" />
+							</ptr>
+						</component>
+						<transform />
+						<uid entityId="1574408045" />
+					</children>
+					<transform>
+						<scale x="0.99805" y="0.99805" z="1.0" />
+					</transform>
+					<uid entityId="107467585" />
+				</children>
+				<children name="TitleText">
+					<behaviours type="anchoredElement">
+						<ptr>
+							<anchorTarget path="723365526" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-440.0" offset_2="880.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="1523850016" />
+							<verticalAnchor nrp_1="1.0" offset_1="-103.0" offset_2="80.0001" />
+						</ptr>
+					</behaviours>
+					<component type="label">
+						<ptr letterSpacing="0.0" linesBreak="BreakAll" maxPrescale="1.0" prescale="4.0" sfs="true" size="52.0" snapToPixels="false" text="%CC_Joker_Token_Title%" textOverflowPolicy="NoBreak" useAutoScale="false">
+							<curve />
+							<fontStyle id="InfoTitle" id..editor..ref="assetType@fontStyle" />
+							<uid entityId="376540638" />
+						</ptr>
+					</component>
+					<transform>
+						<scale x="1e-06" y="1e-06" z="1.0" />
+					</transform>
+					<uid entityId="3929300100" />
+				</children>
+				<children name="Main">
+					<behaviours type="anchoredElement">
+						<ptr>
+							<anchorTarget path="723365526" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-506.5" offset_2="1013.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="3506760144" />
+							<verticalAnchor nrp_1="0.5" offset_1="-121.0" offset_2="348.0" />
+						</ptr>
+					</behaviours>
+					<children name="ArrowsContainer">
+						<behaviours type="anchoredElement">
+							<ptr autoAttachToParent="true">
+								<anchorTarget path="3506760144" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-223.0" offset_2="446.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="2046560465" />
+								<verticalAnchor nrp_1="0.5" offset_1="14.5" offset_2="67.0" />
+							</ptr>
+						</behaviours>
+						<behaviours type="color">
+							<ptr>
+								<uid entityId="1122330940" />
+							</ptr>
+						</behaviours>
+						<children name="Left">
+							<behaviours type="anchoredElement">
+								<ptr attachToParentInStart="false">
+									<anchorTarget path="2046560465" />
+									<horizontalAnchor offset_1="-4.97754" offset_2="66.0" />
+									<normalizedPivot x="0.5" y="0.55" />
+									<uid entityId="1384419533" />
+									<verticalAnchor nrp_1="0.5" offset_1="-34.0033" offset_2="68.0" />
+								</ptr>
+							</behaviours>
+							<component type="image">
+								<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+									<spriteOrTexture id="UI_CC_CollectionInfo_Arrow" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="3702818353" />
+								</ptr>
+							</component>
+							<transform>
+								<angles x="0.0" y="0.0" z="2.09808e-05" />
+								<scale x="1.0" y="0.99902" z="1.0" />
+							</transform>
+							<uid entityId="718838533" />
+						</children>
+						<children name="Right">
+							<behaviours type="anchoredElement">
+								<ptr attachToParentInStart="false">
+									<anchorTarget path="2046560465" />
+									<horizontalAnchor nrp_1="1.0" offset_1="-66.0" offset_2="66.0" />
+									<normalizedPivot x="0.5" y="0.55" />
+									<uid entityId="2030189761" />
+									<verticalAnchor nrp_1="0.5" offset_1="-34.0033" offset_2="68.0" />
+								</ptr>
+							</behaviours>
+							<component type="image">
+								<ptr autoApplySizeToRect="true" ignoreRaycastCheck="true" isInputTransparent="true">
+									<spriteOrTexture id="UI_CC_CollectionInfo_Arrow" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+									<uid entityId="2363060002" />
+								</ptr>
+							</component>
+							<transform>
+								<scale x="1.0" y="0.99902" z="1.0" />
+							</transform>
+							<uid entityId="1938714976" />
+						</children>
+						<transform />
+						<uid entityId="3048903779" />
+					</children>
+					<children name="Stage1">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="3506760144" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-610.0" offset_2="412.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="1910235873" />
+								<verticalAnchor nrp_1="0.5" offset_1="-185.0" offset_2="350.0" />
+							</ptr>
+						</behaviours>
+						<children name="TwoCards">
+							<behaviours type="anchoredElement">
+								<ptr autoAttachToParent="true">
+									<anchorTarget path="1910235873" />
+									<horizontalAnchor nrp_1="0.5" />
+									<normalizedPivot x="0.5" y="0.5" />
+									<uid entityId="3852580982" />
+									<verticalAnchor nrp_1="0.5" />
+								</ptr>
+							</behaviours>
+							<children name="CardBack">
+								<behaviours type="anchoredElement">
+									<ptr attachToParentInStart="false">
+										<anchorTarget path="3852580982" />
+										<horizontalAnchor nrp_1="0.5" offset_1="5.0" />
+										<normalizedPivot x="-13.61" y="0.52" />
+										<uid entityId="3920823575" />
+										<verticalAnchor offset_1="3468.52" offset_2="-6821.0" />
+									</ptr>
+								</behaviours>
+								<children name="SpriteBack">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="3920823575" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-61.4998" offset_2="123.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="1367449279" />
+											<verticalAnchor nrp_1="0.5" offset_1="-50.0" offset_2="136.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="CC_CatBusiness_Card_06" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="464938936" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="1226154890" />
+								</children>
+								<children name="SpriteFront">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="3920823575" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-79.9999" offset_2="160.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="876984895" />
+											<verticalAnchor nrp_1="0.5" offset_1="-102.5" offset_2="205.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="UI_CC_Collection_CardGoldFront" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="553734095" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="1145387634" />
+								</children>
+								<transform>
+									<angles x="0.0" y="0.0" z="-4.99916" />
+								</transform>
+								<uid entityId="3904963303" />
+							</children>
+							<children name="CardFront">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="1910235873" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-107.0" offset_2="162.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="3339808192" />
+										<verticalAnchor nrp_1="0.5" offset_1="-44.5" offset_2="209.0" />
+									</ptr>
+								</behaviours>
+								<children name="SpriteBack">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="3339808192" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-62.4998" offset_2="125.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="2630311848" />
+											<verticalAnchor nrp_1="0.5" offset_1="-51.5" offset_2="139.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="CC_CatBusiness_Card_06" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="44739720" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="1861246483" />
+								</children>
+								<children name="SpriteFront">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="3339808192" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-81.4999" offset_2="163.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="4146295231" />
+											<verticalAnchor nrp_1="0.5" offset_1="-104.5" offset_2="209.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="UI_CC_Collection_CardGoldFront" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="2136274614" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="546304434" />
+								</children>
+								<transform>
+									<angles x="0.0" y="0.0" z="5.0" />
+								</transform>
+								<uid entityId="1467500042" />
+							</children>
+							<children name="Type">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="1910235873" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-102.0" offset_2="204.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2204932977" />
+										<verticalAnchor nrp_1="0.5" offset_1="-33.0001" offset_2="58.0" />
+									</ptr>
+								</behaviours>
+								<children name="Image">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="2204932977" />
+											<horizontalAnchor offset_1="1.52588e-05" offset_2="204.0" />
+											<normalizedPivot x="0.02" y="0.55" />
+											<uid entityId="1093316034" />
+											<verticalAnchor nrp_1="0.5" offset_1="-29.0" offset_2="58.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="UI_CC_CollectionInfo_Card_Panel" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="691413167" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="426493109" />
+								</children>
+								<children name="Text">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="2204932977" />
+											<horizontalAnchor nrp_2="1.0" offset_1="-7.0" offset_2="7.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="522600444" />
+											<verticalAnchor nrp_1="0.5" offset_1="-22.0" offset_2="48.0" />
+										</ptr>
+									</behaviours>
+									<component type="label">
+										<ptr align="CenterTop" dontUseId="true" ignoreRaycastCheck="true" isInputTransparent="true" letterSpacing="-1.0" maxPrescale="1.0" minLines="false" sfs="true" size="29.2" text="Повтор!" textOverflowPolicy="NoBreak">
+											<curve />
+											<fontStyle id="CC_ProgressText" id..editor..ref="assetType@fontStyle" />
+											<uid entityId="2549697623" />
+										</ptr>
+									</component>
+									<transform>
+										<pivot x="0.000366211" y="0.0" z="0.0" />
+									</transform>
+									<uid entityId="538912366" />
+								</children>
+								<transform />
+								<uid entityId="3542853408" />
+							</children>
+							<transform>
+								<angles x="0.0" y="0.0" z="1.0" />
+							</transform>
+							<uid entityId="187903104" />
+						</children>
+						<children name="Text">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="1910235873" />
+									<horizontalAnchor nrp_2="1.0" />
+									<normalizedPivot x="0.5" y="0.5" />
+									<uid entityId="2969877280" />
+									<verticalAnchor nrp_1="0.5" offset_1="-169.5" offset_2="115.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="color">
+								<ptr color="#FFFFFF00">
+									<uid entityId="2822390964" />
+								</ptr>
+							</behaviours>
+							<component type="label">
+								<ptr align="CenterTop" ignoreRaycastCheck="true" isInputTransparent="true" letterSpacing="-0.8" lineInterval="0.2" maxPrescale="1.0" minLines="false" sfs="true" size="29.0" text="%CC_Joker_Info_Step_1%" textOverflowPolicy="NoBreak">
+									<curve />
+									<fontStyle id="CC_ProgressText" id..editor..ref="assetType@fontStyle" />
+									<uid entityId="982786431" />
+								</ptr>
+							</component>
+							<transform>
+								<pivot x="0.000366211" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="366654577" />
+						</children>
+						<transform />
+						<uid entityId="509930512" />
+					</children>
+					<children name="Stage2">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="3506760144" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-153.5" offset_2="295.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="3139579477" />
+								<verticalAnchor nrp_1="0.5" offset_1="-184.356" offset_2="315.0" />
+							</ptr>
+						</behaviours>
+						<behaviours type="locator">
+							<ptr name="CC_CommonPoints">
+								<uid entityId="2272726395" />
+							</ptr>
+						</behaviours>
+						<children name="Tokens">
+							<behaviours type="anchoredElement">
+								<ptr attachToParentInStart="false" autoAttachToParent="true">
+									<anchorTarget path="3139579477" />
+									<horizontalAnchor nrp_1="0.5" offset_1="0.000127792" />
+									<normalizedPivot x="0.5" y="1.0" />
+									<uid entityId="530056030" />
+									<verticalAnchor nrp_1="0.5" />
+								</ptr>
+							</behaviours>
+							<behaviours type="color">
+								<ptr>
+									<uid entityId="3914017198" />
+								</ptr>
+							</behaviours>
+							<children name="TokenBack">
+								<behaviours type="anchoredElement">
+									<ptr attachToParentInStart="false" autoAttachToParent="true">
+										<anchorTarget path="530056030" />
+										<horizontalAnchor nrp_1="0.5" offset_1="22.8157" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="2944572521" />
+										<verticalAnchor nrp_1="0.5" offset_1="65.4217" />
+									</ptr>
+								</behaviours>
+								<children name="Sprite">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="2944572521" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-61.0" offset_2="122.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="1299209755" />
+											<verticalAnchor nrp_1="0.5" offset_1="-61.0" offset_2="122.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="UI_CC_Collection_CardRepeatIcon" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="3144615542" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="320742133" />
+								</children>
+								<transform />
+								<uid entityId="2783108846" />
+							</children>
+							<children name="TokenFront">
+								<behaviours type="anchoredElement">
+									<ptr attachToParentInStart="false" autoAttachToParent="true">
+										<anchorTarget path="530056030" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-15.0374" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="268919551" />
+										<verticalAnchor nrp_1="0.5" offset_1="86.522" />
+									</ptr>
+								</behaviours>
+								<children name="FadeSprite">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="268919551" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-13.0" offset_2="90.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="3223269435" />
+											<verticalAnchor nrp_1="0.5" offset_1="-74.0" offset_2="100.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="UI_CC_CollectionInfo_Fade_Coin" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="3768776481" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="1256004075" />
+								</children>
+								<children name="Sprite">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="268919551" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-66.5" offset_2="133.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="4105938801" />
+											<verticalAnchor nrp_1="0.5" offset_1="-66.5" offset_2="133.0" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<spriteOrTexture id="UI_CC_Collection_CardRepeatIcon" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="1149658595" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="872503488" />
+								</children>
+								<children name="SpriteOverlay">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="268919551" />
+											<horizontalAnchor nrp_1="0.5" offset_1="-66.5" offset_2="133.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="3038932242" />
+											<verticalAnchor nrp_1="0.5" offset_1="-66.5" offset_2="133.0" />
+										</ptr>
+									</behaviours>
+									<behaviours type="color">
+										<ptr color="#FFFFFF82">
+											<uid entityId="3942533379" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+											<material>
+												<materialRef id="lamp_light" id..editor..ref="assetType@material" />
+											</material>
+											<spriteOrTexture id="UI_CC_Collection_CardRepeatIcon" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="3714537594" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="3981832014" />
+								</children>
+								<children name="partSTARS1">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="268919551" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="3510504758" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psEmitter">
+										<ptr maxParticles="50" particlesPerSecond="0.5" prewarmOnStart="1.4">
+											<lifetime delta="-0.15" displayType..editor="MinMax" value="1.65" />
+											<modifiers path="159264620" />
+											<modifiers path="2795165873" />
+											<modifiers path="3138109668" />
+											<modifiers path="1557180320" />
+											<renderer path="2463210492" />
+											<shape path="1438800674" />
+											<startAngle proportional="true">
+												<delta x="6.28319" y="0.0" z="0.0" />
+											</startAngle>
+											<startSize displayType..editor="MinMax" proportional="true">
+												<delta x="-0.25" y="0.0" z="0.0" />
+												<value x="0.55" y="1.0" z="1.0" />
+											</startSize>
+											<uid entityId="2095177757" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psKinetic">
+										<ptr enabled="false">
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="externalForce">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<startSpeed proportional="true">
+												<value x="100.0" y="100.0" z="100.0" />
+											</startSpeed>
+											<uid entityId="1557180320" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psSizeCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr name="size" uniform="true">
+															<x>
+																<key fixedGrad="true">
+																	<rgrad lower="11.2135" upper="11.2135" />
+																</key>
+																<key fixedGrad="true" time="0.2516">
+																	<value lower="1.38965" upper="1.38965" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="-1.29931" upper="-1.29931" />
+																	<value lower="0.5" upper="0.5" />
+																</key>
+															</x>
+															<y>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</y>
+															<z>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="159264620" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psColorCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="color">
+														<ptr name="color">
+															<alpha>
+																<key fixedGrad="true">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key fixedGrad="true" time="0.69963">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key fixedGrad="true" time="1.0" />
+															</alpha>
+															<blue>
+																<key fixedGrad="true">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+															</blue>
+															<green>
+																<key fixedGrad="true">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+															</green>
+															<red>
+																<key fixedGrad="true">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+															</red>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="2795165873" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psAngleCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr additive="true" name="angle">
+															<x>
+																<key />
+																<key time="1.0" />
+															</x>
+															<y>
+																<key />
+																<key time="1.0" />
+															</y>
+															<z>
+																<key fixedGrad="true">
+																	<rgrad lower="39.4813" upper="43.9208" />
+																	<value upper="27.4902" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="3.72385" upper="5.55024" />
+																	<value lower="29.4053" upper="60.5947" />
+																</key>
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="3138109668" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psEllipsoidShape">
+										<ptr radiusX="48.0" radiusY="48.0">
+											<uid entityId="1438800674" />
+										</ptr>
+									</behaviours>
+									<behaviours type="color">
+										<ptr>
+											<uid entityId="1885664929" />
+										</ptr>
+									</behaviours>
+									<component type="psQuadSprite">
+										<ptr>
+											<material>
+												<materialRef id="lamp_light" id..editor..ref="assetType@material" />
+											</material>
+											<texture id="VFX_star_soft" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+											<uid entityId="2463210492" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="207565499" />
+								</children>
+								<transform>
+									<angles x="0.0" y="0.0" z="-0.00098" />
+								</transform>
+								<uid entityId="2907241967" />
+							</children>
+							<transform />
+							<uid entityId="3408468627" />
+						</children>
+						<children name="Text">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="3139579477" />
+									<horizontalAnchor nrp_2="1.0" />
+									<normalizedPivot x="0.5" y="0.5" />
+									<uid entityId="3931474244" />
+									<verticalAnchor nrp_1="0.5" offset_1="-152.5" offset_2="115.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="color">
+								<ptr color="#FFFFFF00">
+									<uid entityId="3420692185" />
+								</ptr>
+							</behaviours>
+							<component type="label">
+								<ptr align="CenterTop" ignoreRaycastCheck="true" isInputTransparent="true" letterSpacing="-0.8" lineInterval="0.2" maxPrescale="1.0" minLines="false" sfs="true" size="29.0" text="%CC_Joker_Info_Step_2%" textOverflowPolicy="NoBreak">
+									<curve />
+									<fontStyle id="CC_ProgressText" id..editor..ref="assetType@fontStyle" />
+									<uid entityId="1671158833" />
+								</ptr>
+							</component>
+							<transform>
+								<pivot x="0.000366211" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="1011388712" />
+						</children>
+						<transform />
+						<uid entityId="2841279192" />
+					</children>
+					<children name="Stage3">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="723365526" />
+								<horizontalAnchor nrp_1="0.5" offset_1="380.0" offset_2="-6.10352e-05" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="253226438" />
+								<verticalAnchor nrp_1="0.5" offset_1="110.0" />
+							</ptr>
+						</behaviours>
+						<children name="JokerCard">
+							<behaviours type="anchoredElement">
+								<ptr attachToParentInStart="false" autoAttachToParent="true">
+									<anchorTarget path="253226438" />
+									<horizontalAnchor nrp_1="0.5" offset_1="-0.000167847" />
+									<normalizedPivot x="0.5" y="0.5" />
+									<uid entityId="2790439454" />
+									<verticalAnchor nrp_1="0.5" offset_1="0.00050354" />
+								</ptr>
+							</behaviours>
+							<children name="effectsBack">
+								<behaviours type="color">
+									<ptr>
+										<uid entityId="3904812123" />
+									</ptr>
+								</behaviours>
+								<children name="BackShine">
+									<behaviours type="psEmitter">
+										<ptr maxParticles="20" particlesPerSecond="12.002" prewarmOnStart="2.0">
+											<lifetime delta="0.0999999" displayType..editor="MinMax" value="4.1" />
+											<modifiers path="2316052661" />
+											<modifiers path="2857968527" />
+											<modifiers path="2654407003" />
+											<modifiers path="2587936641" />
+											<modifiers path="1908445288" />
+											<renderer path="3360161933" />
+											<shape path="1784212724" />
+											<startAngle proportional="true">
+												<value x="0.488692" y="0.0" z="0.0" />
+											</startAngle>
+											<startSize displayType..editor="MinMax" proportional="true">
+												<delta x="0.005" y="0.0" z="0.0" />
+												<value x="0.205" y="1.0" z="1.0" />
+											</startSize>
+											<uid entityId="2041844950" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psKinetic">
+										<ptr enabled="false">
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="externalForce">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<startSpeed proportional="true">
+												<value x="100.0" y="100.0" z="100.0" />
+											</startSpeed>
+											<uid entityId="1908445288" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psSizeCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr name="size">
+															<x>
+																<key fixedGrad="true">
+																	<rgrad lower="0.266994" upper="0.612235" />
+																	<value lower="3.31738" upper="3.31738" />
+																</key>
+																<key fixedGrad="true" time="0.4156">
+																	<value lower="3.86719" upper="4.57813" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="-0.796397" upper="-2.12617" />
+																	<value lower="3.44141" upper="3.44141" />
+																</key>
+															</x>
+															<y>
+																<key fixedGrad="true">
+																	<rgrad lower="33.6646" upper="52.7046" />
+																	<value lower="5.25781" upper="5.25781" />
+																</key>
+																<key fixedGrad="true" time="0.2546">
+																	<value lower="9.47949" upper="11.8672" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="-4.98495" upper="-8.48632" />
+																	<value lower="6.08008" upper="6.08008" />
+																</key>
+															</y>
+															<z>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="2316052661" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psColorCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="color">
+														<ptr name="color">
+															<alpha>
+																<key fixedGrad="true" />
+																<key fixedGrad="true" time="0.3303">
+																	<value lower="40.8048" upper="93.2265" />
+																</key>
+																<key fixedGrad="true" time="0.8602">
+																	<value lower="0.55659" upper="2.08557" />
+																</key>
+																<key fixedGrad="true" time="1.0" />
+															</alpha>
+															<blue>
+																<key>
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+															</blue>
+															<green>
+																<key fixedGrad="true">
+																	<value lower="156.084" upper="156.084" />
+																</key>
+															</green>
+															<red>
+																<key fixedGrad="true" />
+															</red>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="2857968527" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psAngleCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr additive="true" name="angle">
+															<x>
+																<key />
+																<key time="1.0" />
+															</x>
+															<y>
+																<key />
+																<key time="1.0" />
+															</y>
+															<z>
+																<key />
+																<key time="1.0" />
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="2654407003" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psPreRotate">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="rot2d">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="2587936641" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psConeShape">
+										<ptr directionVariation="6.28319">
+											<uid entityId="1784212724" />
+										</ptr>
+									</behaviours>
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="213160191" />
+											<horizontalAnchor offset_1="87.64" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="1232454072" />
+											<verticalAnchor offset_1="113.203" />
+										</ptr>
+									</behaviours>
+									<component type="psQuadSprite">
+										<ptr alignment="StretchedBillboard">
+											<material>
+												<materialRef id="lamp_light" id..editor..ref="assetType@material" />
+											</material>
+											<pivot x="0.54" y="0.3" />
+											<texture id="VFX_dust_2" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+											<uid entityId="3360161933" />
+										</ptr>
+									</component>
+									<transform>
+										<scale x="0.85" y="1.2" z="1.0" />
+									</transform>
+									<uid entityId="2797936476" />
+								</children>
+								<children name="GlowBack">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<horizontalAnchor nrp_1="0.5" offset_1="-127.5" offset_2="255.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="3657393189" />
+											<verticalAnchor nrp_1="0.5" offset_1="-171.0" offset_2="342.0" />
+										</ptr>
+									</behaviours>
+									<behaviours type="color">
+										<ptr color="#B81EFFFF">
+											<uid entityId="35517266" />
+										</ptr>
+									</behaviours>
+									<component type="image">
+										<ptr fitPolicy="Stretch">
+											<material>
+												<materialRef id="lamp_light" id..editor..ref="assetType@material" />
+											</material>
+											<spriteOrTexture id="VFX_dot_soft" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+											<uid entityId="2945622641" />
+										</ptr>
+									</component>
+									<transform>
+										<scale x="1.07731" y="1.07731" z="1.0" />
+									</transform>
+									<uid entityId="3990911405" />
+								</children>
+								<transform />
+								<uid entityId="2435519948" />
+							</children>
+							<children name="Sprite">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="2790439454" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.0002" offset_2="170.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="213160191" />
+										<verticalAnchor nrp_1="0.5" offset_1="-110.0" offset_2="220.0" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+										<spriteOrTexture id="UI_CC_Collection_CardJokerBack" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="3720512764" />
+									</ptr>
+								</component>
+								<transform />
+								<uid entityId="2480738827" />
+							</children>
+							<children name="SpriteOverlay">
+								<behaviours type="anchoredElement">
+									<ptr>
+										<anchorTarget path="2790439454" />
+										<horizontalAnchor nrp_1="0.5" offset_1="-85.0002" offset_2="170.0" />
+										<normalizedPivot x="0.5" y="0.5" />
+										<uid entityId="3385865561" />
+										<verticalAnchor nrp_1="0.5" offset_1="-110.0" offset_2="220.0" />
+									</ptr>
+								</behaviours>
+								<behaviours type="color">
+									<ptr color="#FFFFFF00">
+										<uid entityId="135871378" />
+									</ptr>
+								</behaviours>
+								<component type="image">
+									<ptr ignoreRaycastCheck="true" isInputTransparent="true">
+										<material>
+											<materialRef id="lamp_light" id..editor..ref="assetType@material" />
+										</material>
+										<spriteOrTexture id="UI_CC_Collection_CardJokerBack" id..editor..ref="assetType@SpriteOrTexture; raw@true" />
+										<uid entityId="2523652810" />
+									</ptr>
+								</component>
+								<transform>
+									<angles x="0.0" y="0.0166898" z="0.0186447" />
+									<scale x="1.00046" y="1.00046" z="1.0" />
+								</transform>
+								<uid entityId="3235505669" />
+							</children>
+							<children name="effects">
+								<behaviours type="color">
+									<ptr>
+										<uid entityId="2579372600" />
+									</ptr>
+								</behaviours>
+								<children name="partSTARS">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="213160191" />
+											<horizontalAnchor offset_1="88.0" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="1518003336" />
+											<verticalAnchor offset_1="113.0" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psEmitter">
+										<ptr duration="3.0" maxParticles="10" particlesPerSecond="10.0" prewarmOnStart="0.5">
+											<effectorModifiers first="0" second="0.0" />
+											<lifetime delta="-0.1" displayType..editor="MinMax" value="0.6" />
+											<modifiers path="3102463840" />
+											<modifiers path="2963035575" />
+											<renderer path="1231968978" />
+											<shape path="2816391549" />
+											<startAngle displayType..editor="Constant" proportional="true">
+												<value x="0.785398" y="0.0" z="0.0" />
+											</startAngle>
+											<startSize displayType..editor="MinMax" proportional="true">
+												<delta x="-0.11" y="0.0" z="0.0" />
+												<value x="0.21" y="1.0" z="1.0" />
+											</startSize>
+											<uid entityId="1962357525" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psKinetic">
+										<ptr enabled="false">
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="externalForce">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<startSpeed proportional="true">
+												<value x="100.0" y="100.0" z="100.0" />
+											</startSpeed>
+											<uid entityId="2963035575" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psBoxShape">
+										<ptr emissionType="Volume" sizeX="140.0" sizeY="185.0" sizeZ="1.0" smoothNormals="true">
+											<uid entityId="2816391549" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psSizeCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr name="size" uniform="true">
+															<x>
+																<key fixedGrad="true">
+																	<rgrad lower="11.2135" upper="11.2135" />
+																</key>
+																<key fixedGrad="true" time="0.2516">
+																	<value lower="1.38965" upper="1.38965" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="-1.29931" upper="-1.29931" />
+																	<value lower="0.5" upper="0.5" />
+																</key>
+															</x>
+															<y>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</y>
+															<z>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="3102463840" />
+										</ptr>
+									</behaviours>
+									<component type="psQuadSprite">
+										<ptr>
+											<texture id="VFX_star_soft" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+											<uid entityId="1231968978" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="704172937" />
+								</children>
+								<children name="partCircles">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="2790439454" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="235413151" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psEmitter">
+										<ptr particlesPerSecond="20.0" prewarmOnStart="1.5">
+											<lifetime delta="-0.1" displayType..editor="MinMax" value="0.6" />
+											<modifiers path="2639828183" />
+											<modifiers path="3204662878" />
+											<renderer path="4190650809" />
+											<shape path="3018519006" />
+											<startSize displayType..editor="MinMax" proportional="true">
+												<delta x="-0.02" y="0.0" z="0.0" />
+												<value x="0.05" y="1.0" z="1.0" />
+											</startSize>
+											<uid entityId="2196017944" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psKinetic">
+										<ptr enabled="false">
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="externalForce">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<startSpeed proportional="true">
+												<value x="100.0" y="100.0" z="100.0" />
+											</startSpeed>
+											<uid entityId="3204662878" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psBoxShape">
+										<ptr emissionType="Volume" sizeX="140.0" sizeY="185.0" sizeZ="100.0" smoothNormals="true">
+											<uid entityId="3018519006" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psSizeCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr name="size" uniform="true">
+															<x>
+																<key fixedGrad="true">
+																	<rgrad lower="11.2135" upper="11.2135" />
+																</key>
+																<key fixedGrad="true" time="0.2516">
+																	<value lower="1.38965" upper="1.38965" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="-1.29931" upper="-1.29931" />
+																	<value lower="0.5" upper="0.5" />
+																</key>
+															</x>
+															<y>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</y>
+															<z>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="2639828183" />
+										</ptr>
+									</behaviours>
+									<component type="psQuadSprite">
+										<ptr>
+											<material>
+												<materialRef id="lamp_light" id..editor..ref="assetType@material" />
+											</material>
+											<texture id="VFX_adot" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+											<uid entityId="4190650809" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="2733054976" />
+								</children>
+								<children name="shine">
+									<behaviours type="anchoredElement">
+										<ptr autoAttachToParent="true">
+											<anchorTarget path="2790439454" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="664443819" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psEmitter">
+										<ptr maxParticles="25" particlesPerSecond="10.0" prewarmOnStart="2.0" startMode="RestartOnEnabled">
+											<lifetime delta="0.0999999" displayType..editor="MinMax" value="4.1" />
+											<modifiers path="1135080842" />
+											<modifiers path="1284133495" />
+											<modifiers path="1761783288" />
+											<modifiers path="4253282670" />
+											<modifiers path="2958966016" />
+											<renderer path="4074750358" />
+											<shape path="2418372705" />
+											<startAngle proportional="true">
+												<value x="0.488692" y="0.0" z="0.0" />
+											</startAngle>
+											<startSize displayType..editor="MinMax" proportional="true">
+												<delta x="0.005" y="0.0" z="0.0" />
+												<value x="0.205" y="1.0" z="1.0" />
+											</startSize>
+											<uid entityId="3292564127" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psKinetic">
+										<ptr enabled="false">
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="externalForce">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<startSpeed proportional="true">
+												<value x="100.0" y="100.0" z="100.0" />
+											</startSpeed>
+											<uid entityId="2958966016" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psSizeCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr name="size">
+															<x>
+																<key fixedGrad="true">
+																	<rgrad lower="2.15127" upper="2.15127" />
+																	<value lower="3.31738" upper="3.31738" />
+																</key>
+																<key fixedGrad="true" time="0.2516">
+																	<value lower="3.58398" upper="3.58398" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="-0.169729" upper="-0.169729" />
+																	<value lower="3.46777" upper="3.46777" />
+																</key>
+															</x>
+															<y>
+																<key fixedGrad="true">
+																	<value lower="10.0" upper="10.0" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<value lower="10.0" upper="10.0" />
+																</key>
+															</y>
+															<z>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="1135080842" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psColorCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="color">
+														<ptr name="color">
+															<alpha>
+																<key fixedGrad="true" />
+																<key fixedGrad="true" time="0.3303">
+																	<value lower="4.94555" upper="18.5313" />
+																</key>
+																<key fixedGrad="true" time="1.0" />
+															</alpha>
+															<blue>
+																<key>
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+															</blue>
+															<green>
+																<key fixedGrad="true">
+																	<value lower="98.8877" upper="98.8877" />
+																</key>
+																<key fixedGrad="true" time="0.4888">
+																	<value lower="124.162" upper="243.105" />
+																</key>
+																<key fixedGrad="true" time="0.994">
+																	<value lower="98.8877" upper="98.8877" />
+																</key>
+															</green>
+															<red>
+																<key>
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+															</red>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="1284133495" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psBoxShape">
+										<ptr sizeX="50.0" sizeY="60.0" sizeZ="100.0">
+											<uid entityId="2418372705" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psAngleCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr additive="true" name="angle">
+															<x>
+																<key />
+																<key time="1.0" />
+															</x>
+															<y>
+																<key />
+																<key time="1.0" />
+															</y>
+															<z>
+																<key />
+																<key time="1.0" />
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="1761783288" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psPreRotate">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="rot2d">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="4253282670" />
+										</ptr>
+									</behaviours>
+									<component type="psQuadSprite">
+										<ptr>
+											<material>
+												<materialRef id="lamp_light" id..editor..ref="assetType@material" />
+											</material>
+											<texture id="VFX_dust_2" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+											<uid entityId="4074750358" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="4085973888" />
+								</children>
+								<children name="partSTARS1">
+									<behaviours type="anchoredElement">
+										<ptr>
+											<anchorTarget path="2790439454" />
+											<normalizedPivot x="0.5" y="0.5" />
+											<uid entityId="516595598" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psEmitter">
+										<ptr maxParticles="2" particlesPerSecond="2.0">
+											<lifetime delta="-0.6" displayType..editor="MinMax" value="2.9" />
+											<modifiers path="1244729800" />
+											<modifiers path="840773349" />
+											<modifiers path="21853245" />
+											<renderer path="3465052968" />
+											<shape path="674588792" />
+											<startAngle proportional="true">
+												<value x="0.785398" y="0.0" z="0.0" />
+											</startAngle>
+											<startSize displayType..editor="MinMax" proportional="true">
+												<delta x="-0.25" y="0.0" z="0.0" />
+												<value x="0.55" y="1.0" z="1.0" />
+											</startSize>
+											<uid entityId="90045708" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psKinetic">
+										<ptr enabled="false">
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="float">
+														<ptr additive="true" name="externalForce">
+															<param>
+																<key />
+																<key time="1.0" />
+															</param>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<startSpeed proportional="true">
+												<value x="100.0" y="100.0" z="100.0" />
+											</startSpeed>
+											<uid entityId="21853245" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psBoxShape">
+										<ptr sizeX="140.0" sizeY="185.0" sizeZ="1.0" smoothNormals="true">
+											<uid entityId="674588792" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psSizeCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="vector3">
+														<ptr name="size" uniform="true">
+															<x>
+																<key fixedGrad="true">
+																	<rgrad lower="11.2135" upper="11.2135" />
+																</key>
+																<key fixedGrad="true" time="0.2516">
+																	<value lower="1.38965" upper="1.38965" />
+																</key>
+																<key fixedGrad="true" time="1.0">
+																	<lgrad lower="-1.29931" upper="-1.29931" />
+																	<value lower="0.5" upper="0.5" />
+																</key>
+															</x>
+															<y>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</y>
+															<z>
+																<key>
+																	<value lower="1.0" upper="1.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="1.0" upper="1.0" />
+																</key>
+															</z>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="1244729800" />
+										</ptr>
+									</behaviours>
+									<behaviours type="psColorCurve">
+										<ptr>
+											<clip>
+												<embeddedAsset animationFPS..editor="60" assetType="animationClip">
+													<!--m3c: 0-->
+													<!--vso: 13-->
+													<track type="color">
+														<ptr name="color">
+															<alpha>
+																<key fixedGrad="true">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key fixedGrad="true" time="0.69963">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key fixedGrad="true" time="1.0" />
+															</alpha>
+															<blue>
+																<key>
+																	<value lower="255.0" upper="255.0" />
+																</key>
+																<key time="1.0">
+																	<value lower="255.0" upper="255.0" />
+																</key>
+															</blue>
+															<green>
+																<key fixedGrad="true">
+																	<value lower="127.313" upper="169.875" />
+																</key>
+															</green>
+															<red>
+																<key fixedGrad="true">
+																	<value lower="116.363" upper="219.166" />
+																</key>
+															</red>
+														</ptr>
+													</track>
+												</embeddedAsset>
+											</clip>
+											<uid entityId="840773349" />
+										</ptr>
+									</behaviours>
+									<component type="psQuadSprite">
+										<ptr>
+											<material>
+												<materialRef id="Material_alpha_cutout_blur" id..editor..ref="assetType@material" />
+											</material>
+											<texture id="VFX_star_soft" id..editor..ref="assetType@TextureOrTarget; raw@true" />
+											<uid entityId="3465052968" />
+										</ptr>
+									</component>
+									<transform />
+									<uid entityId="3941091705" />
+								</children>
+								<transform />
+								<uid entityId="3662657169" />
+							</children>
+							<transform>
+								<scale x="1.00195" y="1.00195" z="1.0" />
+							</transform>
+							<uid entityId="1497001403" />
+						</children>
+						<children name="Text">
+							<behaviours type="anchoredElement">
+								<ptr>
+									<anchorTarget path="3139579477" />
+									<horizontalAnchor nrp_2="1.0" offset_1="364.0" offset_2="39.0001" />
+									<normalizedPivot x="0.5" y="0.5" />
+									<uid entityId="847316218" />
+									<verticalAnchor nrp_1="0.5" offset_1="-152.5" offset_2="115.0" />
+								</ptr>
+							</behaviours>
+							<behaviours type="color">
+								<ptr color="#FFFFFF00">
+									<uid entityId="595842209" />
+								</ptr>
+							</behaviours>
+							<component type="label">
+								<ptr align="CenterTop" ignoreRaycastCheck="true" isInputTransparent="true" letterSpacing="-0.8" lineInterval="0.2" maxPrescale="1.0" minLines="false" sfs="true" size="29.0" text="%CC_Joker_Info_Step_3%" textOverflowPolicy="NoBreak">
+									<curve />
+									<fontStyle id="CC_ProgressText" id..editor..ref="assetType@fontStyle" />
+									<uid entityId="3939805062" />
+								</ptr>
+							</component>
+							<transform>
+								<pivot x="0.000366211" y="0.0" z="0.0" />
+							</transform>
+							<uid entityId="1685239101" />
+						</children>
+						<transform />
+						<uid entityId="1261732144" />
+					</children>
+					<transform>
+						<scale x="0.90039" y="0.90039" z="1.0" />
+					</transform>
+					<uid entityId="2582158550" />
+				</children>
+				<children name="Progressbar">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="723365526" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-100.0" offset_2="200.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="953983231" />
+							<verticalAnchor nrp_1="0.5" offset_1="-248.0" offset_2="86.0" />
+						</ptr>
+					</behaviours>
+					<behaviours type="color">
+						<ptr>
+							<uid entityId="2515602326" />
+						</ptr>
+					</behaviours>
+					<children name="Progressbar">
+						<link objId="3779610365">
+							<id id="UI_CC_JokerProgressbar" id..editor..ref="assetType@sceneObject" />
+						</link>
+						<transform />
+						<uid entityId="4105624295" />
+					</children>
+					<transform>
+						<scale x="0.5" y="0.5" z="1.0" />
+					</transform>
+					<uid entityId="2480787418" />
+				</children>
+				<children name="Descr" visibility="false">
+					<behaviours type="anchoredElement">
+						<ptr autoAttachToParent="true">
+							<anchorTarget path="723365526" />
+							<horizontalAnchor nrp_1="0.5" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="2424356766" />
+							<verticalAnchor nrp_1="0.5" offset_1="-240.0" />
+						</ptr>
+					</behaviours>
+					<children name="Text">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="2424356766" />
+								<horizontalAnchor nrp_1="0.5" offset_1="-388.5" offset_2="777.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="185097391" />
+								<verticalAnchor nrp_1="0.5" offset_1="-50.0" offset_2="100.0" />
+							</ptr>
+						</behaviours>
+						<component type="label">
+							<ptr ignoreRaycastCheck="true" isInputTransparent="true" letterSpacing="0.1" maxPrescale="1.0" minLines="false" sfs="true" size="27.0" text="%CC_Joker_Token_Text%" textOverflowPolicy="NoBreak">
+								<curve />
+								<fontStyle id="CC_ProgressText" id..editor..ref="assetType@fontStyle" />
+								<uid entityId="1971005096" />
+							</ptr>
+						</component>
+						<transform />
+						<uid entityId="212475614" />
+					</children>
+					<transform />
+					<uid entityId="2303009970" />
+				</children>
+				<children name="TapToContinue">
+					<behaviours type="anchoredElement">
+						<ptr>
+							<anchorTarget path="723365526" />
+							<horizontalAnchor nrp_1="0.5" offset_1="-290.0" offset_2="580.0" />
+							<normalizedPivot x="0.5" y="0.5" />
+							<uid entityId="1116963817" />
+							<verticalAnchor offset_1="-2.83068" offset_2="100.0" />
+						</ptr>
+					</behaviours>
+					<behaviours type="button">
+						<ptr>
+							<uid entityId="4204954604" />
+						</ptr>
+					</behaviours>
+					<behaviours type="buttonStateGraph">
+						<ptr>
+							<uid entityId="532374468" />
+						</ptr>
+					</behaviours>
+					<behaviours type="stateGraph">
+						<ptr>
+							<stateGraph id="UI_ButtonPress" id..editor..ref="assetType@stateGraph" />
+							<uid entityId="4049095007" />
+						</ptr>
+					</behaviours>
+					<behaviours type="animation">
+						<ptr startMode="Manual">
+							<remoteNodeLocator />
+							<uid entityId="2838030131" />
+						</ptr>
+					</behaviours>
+					<behaviours type="color">
+						<ptr>
+							<uid entityId="3164006236" />
+						</ptr>
+					</behaviours>
+					<children name="BlackFade">
+						<component type="blackFade">
+							<ptr color="#00000000">
+								<uid entityId="1545527594" />
+							</ptr>
+						</component>
+						<transform />
+						<uid entityId="490358034" />
+					</children>
+					<children name="Text">
+						<behaviours type="anchoredElement">
+							<ptr>
+								<anchorTarget path="1116963817" />
+								<horizontalAnchor nrp_2="1.0" />
+								<normalizedPivot x="0.5" y="0.5" />
+								<uid entityId="84250434" />
+								<verticalAnchor nrp_2="1.0" />
+							</ptr>
+						</behaviours>
+						<component type="label">
+							<ptr ignoreRaycastCheck="true" isInputTransparent="true" letterSpacing="0.1" maxPrescale="1.0" minLines="false" sfs="true" size="27.0" text="%PressToContinue%" textOverflowPolicy="NoBreak">
+								<curve />
+								<fontStyle id="Hint" id..editor..ref="assetType@fontStyle" />
+								<uid entityId="1292552629" />
+							</ptr>
+						</component>
+						<transform />
+						<uid entityId="1066746168" />
+					</children>
+					<component type="colorRect">
+						<ptr>
+							<uid entityId="1105807674" />
+						</ptr>
+					</component>
+					<transform />
+					<uid entityId="3975377950" />
+				</children>
+				<transform />
+				<uid entityId="3658441275" />
+			</children>
+			<transform />
+			<uid entityId="2799255338" />
+		</children>
+		<sorting type="priority">
+			<ptr priorityValue="492">
+				<uid entityId="3443164290" />
+			</ptr>
+		</sorting>
+		<transform />
+		<uid entityId="889571582" />
+	</root>
+</asset>
