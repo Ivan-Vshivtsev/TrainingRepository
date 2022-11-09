@@ -22,3 +22,592 @@ value + v*amp*Math.sin(freq*t*2*Math.PI)/Math.exp(decay*t);
 }else{
 value;
 }
+
+________________________________________________________
+центр композиции
+
+[thisComp.width/2,thisComp.height/2]      [value[0],thisComp.height]
+[thisLayer.width/2,thisLayer.height/2]
+[value[0],value[0]]
+
+toComp(0,0,0) при привзяке к нулю, котьторый привязан к другому нулю
+
+________________________________________________________blinkin
+blinkRate=25;
+n=Math.sin(time*blinkRate);
+if(n<0) 0;
+else 100;
+
+
+________________________________________________________dynamic scale
+shft = 2;
+Math.sin(time*4)*shft+(value-shft)
+
+
+
+[value[0],value[0]]
+________________________________________________________
+привязка с шагом
+
+xcell = thisComp.layer("main").effect("cells")("Point")[0]/2;
+ycell = thisComp.layer("main").effect("cells")("Point")[1]/2;
+x = Math.round(value[0]/xcell)*xcell;
+y = Math.round(value[1]/ycell)*ycell;
+[x,y]
+
+________________________________________________________
+
+spd = thisLayer.effect("spd")("Slider");
+[value[0]-spd,value[1]-spd]
+
+________________________________________________________
+
+[-value[0],value[1]]
+
+________________________________________________________
+движение по кругу
+
+r = effect("rad")("Slider");
+thisComp.layer("center").transform.position + [(thisComp.width/2), (thisComp.height/2)] + [Math.sin(effect("Rot")("Slider"))*r, -Math.cos(effect("Rot")("Slider"))*r]
+
+________________________________________________________курсор
+
+
+
+________________________________________________________
+масштабирование по синусу
+
+delta = Math.sin(time*8)*4;
+[value[0]+ delta,value[1]+ delta];
+
+
+delta = 100+Math.sin(time*8)*4;
+[(value[0]*delta)/100,(value[1]*delta)/100];
+
+цикл за секунду с нуля до нуля
+sc = Math.sin((time+effect("Slider Control")("Slider"))*6.2832*1)*30;
+[300+sc,300+sc]
+
+________________________________________________________
+параллакс
+
+cam = thisComp.layer("Camera 1");
+distance = length(sub(position, cam.position));
+sc = scale[0] * distance / cam.zoom;
+[sc,sc,sc]
+________________________________________________________
+
+изменения одного значения из массива (Y ось)
+
+x = value [0];
+y = wiggle(5,25)[1];
+[x,y];
+________________________________________________________
+around
+
+radius=300
+angle=time*200 //для управления скоростью лучше привязать к слайдеру или angle контролу
+x=radius*Math.cos(degreesToRadians(angle))
+y=radius*Math.sin(degreesToRadians(angle))
+center=[640,360,0] // хотя лучше привязать к point control'у
+center +[x,y]
+
+________________________________________________________
+
+Spiral
+
+shrink=time+1
+radius=1000/shrink
+angle=time*200
+x=radius*Math.cos(degreesToRadians(angle))
+y=radius*Math.sin(degreesToRadians(angle))
+//z=0 // no depth
+z=time*time // with depth
+centre=[640,360,0]
+centre +[x,y,z]
+
+________________________________________________________
+цикличное мигание
+
+blinkSpeed =10;
+n = Math.sin(time*blinkSpeed);
+if (n<=0) 0 else 100;
+
+________________________________________________________
+if ((time>5) && (time<10)) wiggle(5,10) else value;
+________________________________________________________
+подложка под текст (для субтитров, например)
+
+ShapeLayer
+
+rectangle size
+temp = thisComp.layer("TEXT").text.sourceText;
+s = temp.length;
+x = 100 * (s * .175);
+[x, value[1]]
+
+________________________________________________________
+Loop Wiggle
+
+freq = 1;
+amp = 110;
+loopTime = 3;
+t = time % loopTime;
+wiggle1 = wiggle(freq, amp, 1, 0.5, t);
+wiggle2 = wiggle(freq, amp, 1, 0.5, t - loopTime);
+linear(t, 0,  loopTime, wiggle1, wiggle2)
+
+или
+
+freq = 1;
+amp = 10;
+loopTime = 4;
+t = time % loopTime;
+wiggle1 = wiggle(freq, amp, 1, 0.5, t);
+wiggle2 = wiggle(freq, amp, 1, 0.5, t - loopTime);
+
+
+x = value [0];
+y = linear(t, 0,  loopTime, wiggle1, wiggle2)[1];
+[y,y];
+
+________________________________________________________
+amplitude = 0.1;
+frequency = 2.0;
+decay = 4.0;
+
+nearestKeyIndex = 0;
+if (numKeys > 0){
+  nearestKeyIndex = nearestKey(time).index;
+  if (key(nearestKeyIndex).time > time){
+    nearestKeyIndex--;
+  }
+}
+if (nearestKeyIndex == 0) {
+  currentTime = 0;
+} else {
+  currentTime = time - key(nearestKeyIndex).time;
+}
+if (nearestKeyIndex > 0 && currentTime < 1) {
+  calculatedVelocity = velocityAtTime(key(nearestKeyIndex).time - thisComp.frameDuration / 10);
+  value + calculatedVelocity * amplitude * Math.sin(frequency * currentTime * 2 * Math.PI) / Math.exp(decay * currentTime);
+} else {
+  value;
+}
+
+________________________________________________________
+Overshoot in Detail
+
+amp = 80;
+freq = 1;
+decay = 1;
+
+t = time - inPoint;
+amp*Math.sin(t*freq*Math.PI*2)/Math.exp(t*decay);
+____
+t = time - inPoint;
+startVal = [0,0];
+endVal = [200,200];
+dur = 0.1;
+linear(t,0,dur,startVal,endVal);
+________________________________________________________
+Jack-in-the-Box выпрыгивающая пружинка
+
+veloc = 35; 
+amplitude = 30; 
+decay = 1.0; 
+y = amplitude*Math.cos(veloc*time)/Math.exp(decay*time);
+value + [0,y]
+________________________________________________________
+Pendulum остановка маятника
+
+veloc = 7; 
+amplitude = 80; 
+decay = .7;
+ 
+amplitude*Math.sin(veloc*time)/Math.exp(decay*time) 
+________________________________________________________
+Squash and Stretch падающее жиле
+
+maxDev = 13; // max deviation in pixels
+spd = 30;  //speed of oscillation
+decay = 1.0; //how fast it slows down
+
+t = time - inPoint;
+x = scale[0] + maxDev*Math.sin(spd*t)/Math.exp(decay*t);
+y = scale[0]*scale[1]/x;
+[x,y]
+________________________________________________________
+Undulations балансирование на волне
+
+//Apply the following expression to the position property of an object:
+
+
+xAmp = 3; //height of undulations (pixels)
+xFreq = .3; //undulations per second
+xSpeed = 150; //speed of wave (pixels per second)
+
+wl = xSpeed/xFreq; //wavelength (pixels)
+phaseOffset = ((position[0]%wl)/wl)*2*Math.PI;
+y = xAmp*Math.sin(2*Math.PI*xFreq*time + phaseOffset);
+value + [0,y]
+
+//Apply this expression to the rotation porperty:
+
+
+xFreq = .3; //undulations per second
+xSpeed = 150; //speed of wave (pixels per second)
+damping = 15; //undulation damping factor
+
+wl = xSpeed/xFreq; //wavelength (pixels)
+phaseOffset = ((position[0]%wl)/wl)*2*Math.PI;
+theta = Math.atan(Math.cos(2*Math.PI*xFreq*time + phaseOffset));
+radiansToDegrees(theta)/damping;
+________________________________________________________
+Vibrating Strings
+
+amp = 15; //amplitude (pixels)
+freq = 10; //frequency (cycles per second)
+
+amp*Math.sin(freq*time*Math.PI*2)
+________________________________________________________
+Бесконечное вращение:
+
+Для оси X:
+Math.cos(S*time)*360
+
+Для оси Y:
+Math.sin(S*time)*360
+
+Для колес эволюции и оси Z:
+time*S
+
+,где S - значение скорости вращения.
+________________________________________________________
+Вибрация
+
+amp = 15; //amplitude (pixels)
+freq = 10; //frequency (cycles per second)
+
+amp*Math.sin(freq*time*Math.PI*2)
+________________________________________________________
+Баскетбольный мяч. от NIX
+Vy0 = 500; //initial y velocity (pixels/second)
+Vx0 = 100; // initial x velocity (pixels/second)
+g = 2500; // gravity (pixels/second/second)
+floor = 400;
+e = .85; //elasticity
+b = floor - position[1];
+h = b + Vy0*Vy0/(2*g);
+T = Vy0/g + Math.sqrt(2*h/g);
+if ((time-inPoint) < T){
+y = Vy0*(time-inPoint) - g*(time-inPoint)*(time-inPoint)/2 + b;
+}else{
+Vy = -(Vy0 - g*T);
+while (true){
+Vy *= e;
+t = T;
+T += 2*Vy/g;
+if ((time-inPoint) < T){
+t = (time-inPoint) - t;
+y = Vy*t - g*t*t/2;
+break;
+}else if (T - t < thisComp.frameDuration){
+y = 0;
+break;
+}
+}
+}
+[position[0] + Vx0*(time-inPoint), floor - y]
+________________________________________________________
+эффект пинг понга (по стенкам композиции)
+
+left = 0;
+top = 0;
+right = thisComp.width;
+bottom = thisComp.height;
+
+minSpeed = 200; //pixels per second
+maxSpeed = 1800;
+
+minX = left + 20;
+maxX = right - 20;
+minY = top + 20;
+maxY = bottom - 20;
+
+minR = 5;
+maxR = 85;
+
+seedRandom(index,true);
+
+// calc start position
+
+pos = random([minX,minY],[maxX,maxY])
+quadrent = Math.floor(random(4))*90;
+angle = random(minR,maxR) + quadrent;
+spd = random(minSpeed,maxSpeed);
+
+// initialize time count;
+
+t = 0;
+
+while(t <= time){
+rads = degreesToRadians(angle);
+xVel = spd*Math.cos(rads);
+yVel = spd*Math.sin(rads);
+
+// see if going up or down
+
+if (yVel < 0) yLim = top else yLim = bottom;
+
+// see if going right or left
+
+if (xVel < 0) xLim = left else xLim = right;
+
+timeX = (xLim - pos[0])/xVel;
+timeY = (yLim - pos[1])/yVel;
+
+if (timeX < timeY){ //hit left or right wall
+if (t + timeX >= time){
+deltaT = time - t;
+pos += [xVel,yVel]*deltaT;
+break;
+}else{
+pos = [xLim,pos[1] + yVel*timeX];
+angle = 180 - angle;
+t += timeX;
+}
+}else{ //hit upper or lower wall
+if (t + timeY >= time){
+deltaT = time - t;
+pos += [xVel,yVel]*deltaT;
+break;
+}else{
+pos = [pos[0] + xVel*timeY,yLim];
+angle = 360 - angle;
+t += timeY; 
+}
+}
+}
+pos
+________________________________________________________
+автофокус камеры
+target = thisComp.layer("target");
+v1 = target.toWorld(target.anchorPoint) - toWorld([0,0,0]);
+v2 = toWorldVec([0,0,1]);
+dot(v1,v2)
+________________________________________________________
+позиция с шагом
+[Math.round(transform.position[0]/100)*100, Math.round(transform.position[1]/100)*100]
+________________________________________________________
+для анимации текстав аниматоре
+
+delay = .1;
+myDelay = delay*textIndex;
+t = (time - inPoint) - myDelay;
+if (t >= 0){
+  freq =2;
+  amplitude = 100;
+  decay = 8.0;
+  s = amplitude*Math.cos(freq*t*2*Math.PI)/Math.exp(decay*t);
+  [s,s]
+}else{
+  value
+}
+
+________________________________________________________
+transition = 20;       // transition time in frames
+if (marker.numKeys<2){
+tSecs = transition / ( 1 / thisComp.frameDuration); // convert to seconds
+linear(time, inPoint, inPoint + tSecs, 0, 100) - linear(time, outPoint - tSecs, outPoint, 0, 100)
+}else{
+linear(time, inPoint, marker.key(1).time, 0, 100) - linear(time, marker.key(2).time, outPoint, 0, 100)
+}
+
+________________________________________________________
+transition = 4;
+if (marker.numKeys<2){
+tSecs = transition / ( 1 / thisComp.frameDuration);
+F = easeOut(time, inPoint, inPoint + tSecs, 0, 100) - easeOut(time, outPoint - tSecs, outPoint, 0, 100)
+}else{
+F = easeIn(time, inPoint, marker.key(1).time, 0, 100) - easeIn(time, marker.key(2).time, outPoint, 0, 100)
+}
+[F,F]
+
+________________________________________________________+ рандом
+transition = 7;
+seedRandom(2,timeless = true);
+rnd = random(12);
+if (marker.numKeys<2){
+tSecs = transition / ( 1 / thisComp.frameDuration);
+f = ease(time-rnd*.02, inPoint, inPoint + tSecs, 0, 100) - ease(time+rnd*.02, outPoint - tSecs, outPoint, 0, 100)
+}else{
+f = ease(time-rnd*.02, inPoint, marker.key(1).time, 0, 100) - ease(time+rnd*.02, marker.key(2).time, outPoint, 0, 100)
+}
+f
+
+________________________________________________________
+
+transition = 35;
+if (marker.numKeys<2){
+tSecs = transition / ( 1 / thisComp.frameDuration);
+f = easeOut(time, inPoint, inPoint + tSecs, 0, 100) - easeIn(time, outPoint - tSecs, outPoint, 0, 100)
+}else{
+f = easeOut(time, inPoint, marker.key(1).time, 0, 100) - easeIn(time, marker.key(2).time, outPoint, 0, 100)
+}
+f
+
+________________________________________________________переход + качание
+transition = 11;
+if (marker.numKeys<2){
+tSecs = transition / ( 1 / thisComp.frameDuration);
+f = easeOut(time, inPoint, inPoint + tSecs, 0, 1) - easeIn(time, outPoint - tSecs, outPoint, 0, 1)
+}else{
+f = easeOut(time, inPoint, marker.key(1).time, 0, 1) - easeIn(time, marker.key(2).time, outPoint, 0, 1)
+}
+f*(value+Math.sin(time*6)*4)
+
+
+________________________________________________________+ рандом + пульсация
+seedRandom(2,timeless = true);
+rnd = random(1)/10;
+
+delta = Math.sin(time*5+rnd)*4;
+
+transition = 6;
+if (marker.numKeys<2){
+tSecs = transition / ( 1 / thisComp.frameDuration);
+F = easeOut(time, inPoint, inPoint + tSecs, 0, 1) - easeOut(time, outPoint - tSecs, outPoint, 0, 1)
+}else{
+F = easeIn(time, inPoint, marker.key(1).time, 0, 1) - easeIn(time, marker.key(2).time, outPoint, 0, 1)
+}
+[F * (100+delta),F * (100+delta)]
+
+________________________________________________________
+слайдшоу
+framesToTime(index-1-thisComp.layer("DIVIDER").index)+thisComp.layer("DIVIDER").effect("Slider Control")("Slider")
+________________________________________________________
+
+
+seedRandom(2,timeless = true);
+random(1)
+
+________________________________________________________диапазон
+clamp(value,min=0,max=100)
+
+
+________________________________________________________рандом с частотой
+holdTime = 0.2;
+seed = Math.floor(time/holdTime);
+seedRandom(seed,true);
+random([1000,100],[1300,300]) 
+
+________________________________________________________рандомный поворот на 90
+
+seedRandom(2,timeless = true);
+rnd = random(1);
+Math.round(rnd)*90
+
+
+
+________________________________________________________для слайдшоу
+
+framesToTime(index-1-thisComp.layer("DIVIDER").index)+thisComp.layer("DIVIDER").effect("Slider Control")("Slider")
+
+________________________________________________________мерцание
+
+segMin = 1.0; //минимум за сегмент / minimum for segment
+segMax = 1.5; //максимум за сегмент / maximum for segment
+flickerDurMin = .5; //продолжительность минимум / duration minimum
+flickerDurMax = .8; //продолжительность максимум / duration maximum
+
+end = 0;
+j = 0;
+while ( time >= end){
+j += 1;
+seedRandom(j,true);
+start = end;
+end += random(segMin,segMax);
+}
+flickerDur = random(flickerDurMin,flickerDurMax);
+if (time > end - flickerDur){
+seedRandom(1,false);
+random(100);
+}else{100}
+
+________________________________________________________мерцание2
+
+probability = 2;
+
+opacity_normal = 100*effect("click")("Slider");
+
+x = random(probability)*effect("click")("Slider");
+
+if (x <= 1) {
+	opacity = random(100)*effect("click")("Slider");
+} else {
+opacity = opacity_normal;
+}
+
+
+________________________________________________________cursorRotate
+xx = thisComp.width;
+yy = thisComp.height;
+(ease(transform.position[0],0,xx,-10,20)+ease(transform.position[1],0,yy,20,-10))/2
+________________________________________________________
+dymmetry
+POS
+[value[0],value[1],-value[1]+1500]
+SCALE
+cam = thisComp.layer("Camera 1");
+distance = length(sub(position, cam.position));
+[100,100,100] * distance / cam.zoom;
+________________________________________________________
+flip
+[-value[0]+value[0]*effect("flip")("Checkbox")*2,value[0]]
+________________________________________________________
+x = (index-1-thisComp.layer("DIVIDER").index)*1000;
+y = value [1];
+z = value [2];
+[x,y,z];
+
+
+// framesToTime(index-1-thisComp.layer("DIVIDER").index)+thisComp.layer("DIVIDER").effect("Slider Control")("Slider")
+
+
+________________________________________________________стробящий свет+рандом+проценты
+
+seedRandom(12,timeless = true);
+rnd = random(6);
+shft = 3; //percent
+sh = shft*value/100;
+
+value - (Math.sin(time*250+rnd)*sh+sh)
+
+
+________________________________________________________качание и транзишн
+seedRandom(12,timeless = true);
+rnd = random(6);
+v = ease(transform.opacity,0,100,50,100);
+shft = 1; //percent
+sh = shft*v/100;
+xx = v - (Math.sin(time*3+rnd)*sh+sh);
+[xx,xx]
+
+
+
+________________________________________________________
+
+shft = 5;
+offst=(transform.opacity)*shft*.01;
+sc=value[0]-shft+offst;
+[sc,sc]
+
+
+________________________________________________________округление до сотых
+
+parseFloat(thisComp.layer("white_shape").effect("progress")("Slider")).toFixed(2)
+
+________________________________________________________синус кратный секундам
+sc = Math.sin(time*Math.PI);
+[sc,sc]*100
