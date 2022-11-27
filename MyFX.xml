@@ -1,0 +1,22 @@
+<EffectSolution version="7">
+	<Effect path="FX_OverStarFlash2.xml"/>
+	<Effect path="FX_Girlands.xml"/>
+	<Effect path="FX_Confetti_Gold.xml"/>
+	<Effect path="FX_Confetti_Silver.xml"/>
+	<Effect path="FX_Flash1.xml"/>
+	<Effect path="FX_Flash2.xml"/>
+	<Effect path="FX_RewardIdle.xml"/>
+	<Effect path="FX_PromoWindowFX1.xml"/>
+	<Effect path="FX_PromoWindowFX2.xml"/>
+	<Effect path="FX_PromoWindowFX3.xml"/>
+	<Effect path="FX_OverStarFlash.xml"/>
+	<Effect path="FX_RewardShine3.xml"/>
+	<Effect path="FX_RewardShine4.xml"/>
+	<Effect path="FX_StarBlick3.xml"/>
+	<Effect path="FX_StarBlick4.xml"/>
+	<Effect path="FX-Flash1.xml"/>
+	<Effect path="FX-Flash2.xml"/>
+	<Effect path="FX_Flash3.xml"/>
+	<Effect path="FX_OverStarFlash3.xml"/>
+</EffectSolution>
+
