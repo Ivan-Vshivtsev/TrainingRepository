@@ -1,4 +1,5 @@
 <EffectSolution version="7">
+	<Effect path="FX_DroneExplosion1.xml"/>
 	<Effect path="CC_Confetti_Gold.xml"/>
 	<Effect path="CC_Confetti_Gold3.xml"/>
 	<Effect path="CC_Confetti_Silver.xml"/>
