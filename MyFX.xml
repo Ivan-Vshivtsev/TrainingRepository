@@ -1,8 +1,19 @@
 <EffectSolution version="7">
+<<<<<<< HEAD
 	<Effect path="FX_OverStarFlash2.xml"/>
 	<Effect path="FX_Girlands.xml"/>
 	<Effect path="FX_Confetti_Gold.xml"/>
 	<Effect path="FX_Confetti_Silver.xml"/>
+=======
+	<Effect path="FX_DroneExplosion1.xml"/>
+	<Effect path="FX_DroneSmoke.xml"/>
+	<Effect path="CC_Confetti_Gold.xml"/>
+	<Effect path="CC_Confetti_Gold3.xml"/>
+	<Effect path="CC_Confetti_Silver.xml"/>
+	<Effect path="CC_Confetti_Gold2.xml"/>
+	<Effect path="CC_Confetti_Gold4.xml"/>
+	<Effect path="Confetti_2.xml"/>
+>>>>>>> 75bd19b (fix droneFXs)
 	<Effect path="FX_Flash1.xml"/>
 	<Effect path="FX_Flash2.xml"/>
 	<Effect path="FX_RewardIdle.xml"/>
