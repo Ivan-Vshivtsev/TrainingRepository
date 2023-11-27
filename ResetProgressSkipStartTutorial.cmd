@@ -1,0 +1,1 @@
+start .\Homescapes.exe --reset --skip_start_tutorial
