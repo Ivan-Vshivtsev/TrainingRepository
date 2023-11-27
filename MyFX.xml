@@ -75,5 +75,34 @@
 	<Effect path="FX_ShineRainbow_.xml"/>
 	<Effect path="NewEffect2.xml"/>
 	<Effect path="FX_Card_IN.xml"/>
+	<Effect path="BR_PointFlash.xml"/>
+	<Effect path="BR_RewardUp.xml"/>
+	<Effect path="BR_Confetti1.xml"/>
+	<Effect path="BR_DroneExplosion1.xml"/>
+	<Effect path="BR_ChestFX.xml"/>
+	<Effect path="BR_Flash1.xml"/>
+	<Effect path="_CC_Flash2.xml"/>
+	<Effect path="_CC_PromoWindowFX2.xml"/>
+	<Effect path="_CC_PromoWindowFX.xml"/>
+	<Effect path="_FX_Shine4.xml"/>
+	<Effect path="_FX_ShineRainbow2.xml"/>
+	<Effect path="_FX_ShineBack.xml"/>
+	<Effect path="_CC_RewardShine2.xml"/>
+	<Effect path="_FX_Explosion1.xml"/>
+	<Effect path="_FX_Shine5.xml"/>
+	<Effect path="_CC_Confetti_Gold3.xml"/>
+	<Effect path="_FX_FreeCardIcon_Back.xml"/>
+	<Effect path="BR_DroneExplosion2.xml"/>
+	<Effect path="BR_PointFlash2.xml"/>
+	<Effect path="BR_RewardUp2.xml"/>
+	<Effect path="BR_ChestFX2.xml"/>
+	<Effect path="BR_Flash2.xml"/>
+	<Effect path="BR_Confetti2.xml"/>
+	<Effect path="QC_Flash1.xml"/>
+	<Effect path="QC_FlashSmall1.xml"/>
+	<Effect path="QC_RewardShine.xml"/>
+	<Effect path="QC_RewardIdle1.xml"/>
+	<Effect path="СС_Unlock.xml"/>
+	<Effect path="TEMP_shine.xml"/>
 </EffectSolution>
 

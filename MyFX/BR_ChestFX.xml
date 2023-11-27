@@ -1,0 +1,710 @@
+<Effect version="7" name="BR_ChestFX" description="">
+	<ParticleSystem objectId="0" name="RainbowArrows" numOfParticles="10" lifeInitial="3.0" lifeVariation="1.0" pauseAverage="0.0" pauseVariation="0.0" startTime="2.0" deadCountTime="0.0" bornTime="-0.4" blendMode="add" linkedParticles="false" needStartDeadCounter="true" orientParticles="true" isVelocity="true" isEqual="false" isHidden="false" localLinkCoordinates="true" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="64" textureHeight="64" hotPointX="0.5" hotPointY="0.5" texture="textures/particles/dot" emitterType="point" emitterAngle="80.0" emitterRange="115.0" emitterOrientation="360.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="true" isEqualCreateTime="true" compensateHotpoint="false" showEmitter="false" emitterLink="5">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="-695.467" rgradUpper="579.812"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="-211.853" valueUpper="211.853" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" rightCurveMode="linear"/>
+			<Key time="1.0" fixedGrad="true" repeat="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="1.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.542" valueUpper="1.737" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.289" rgradUpper="1.509"/>
+			<Key time="0.349" fixedGrad="true" repeat="false" valueLower="0.7" valueUpper="2.127" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.992" fixedGrad="true" repeat="false" valueLower="0.493" valueUpper="1.699" lgradLower="0.0" lgradUpper="-0.003" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.493" valueUpper="1.699" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+		</Param>
+		<Param name="angle" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="70.479" valueUpper="134.002" lgradLower="0.0" lgradUpper="0.0" rgradLower="-86.24" rgradUpper="-86.24"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="9.872" valueUpper="9.872" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.203" fixedGrad="false" repeat="true"/>
+			<Key time="0.362" fixedGrad="false" repeat="true"/>
+			<Key time="0.504" fixedGrad="false" repeat="false" valueLower="249.375" valueUpper="249.375"/>
+			<Key time="0.697" fixedGrad="false" repeat="false" valueLower="252.518" valueUpper="252.518"/>
+			<Key time="0.855" fixedGrad="false" repeat="false" valueLower="58.125" valueUpper="58.125"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="23.125" valueUpper="23.125"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.203" fixedGrad="false" repeat="false" valueLower="88.75" valueUpper="88.75"/>
+			<Key time="0.362" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.504" fixedGrad="false" repeat="false" valueLower="84.375" valueUpper="84.375"/>
+			<Key time="0.697" fixedGrad="false" repeat="false" valueLower="83.577" valueUpper="83.577"/>
+			<Key time="0.855" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="206.875" valueUpper="206.875"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.203" fixedGrad="false" repeat="true"/>
+			<Key time="0.362" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="0.504" fixedGrad="false" repeat="true"/>
+			<Key time="0.697" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.855" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="0.203" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="254.89" lgradUpper="254.89" rgradLower="-37.356" rgradUpper="-37.356"/>
+			<Key time="0.362" fixedGrad="true" repeat="false" valueLower="66.507" valueUpper="66.507" lgradLower="940.253" lgradUpper="940.253" rgradLower="948.763" rgradUpper="948.763"/>
+			<Key time="0.504" fixedGrad="false" repeat="false" valueLower="226.789" valueUpper="226.789"/>
+			<Key time="0.697" fixedGrad="false" repeat="false" valueLower="136.215" valueUpper="136.215"/>
+			<Key time="0.855" fixedGrad="true" repeat="false" valueLower="17.296" valueUpper="17.296" lgradLower="-448.9" lgradUpper="-448.9" rgradLower="-383.271" rgradUpper="-383.271"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.358" rgradUpper="0.415"/>
+			<Key time="0.499" fixedGrad="true" repeat="false" valueLower="0.062" valueUpper="0.113" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="1" name="Shine" numOfParticles="10" lifeInitial="3.0" lifeVariation="1.0" pauseAverage="0.3" pauseVariation="0.0" startTime="1.3" deadCountTime="0.0" bornTime="-0.5" blendMode="add" linkedParticles="false" needStartDeadCounter="true" orientParticles="true" isVelocity="true" isEqual="true" isHidden="false" localLinkCoordinates="true" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="32" textureHeight="32" hotPointX="0.15" hotPointY="0.49" texture="textures/particles/backlight" emitterType="point" emitterAngle="73.0" emitterRange="122.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="true" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false" emitterLink="5">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="1.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.925" valueUpper="8.273" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.131" rgradUpper="0.203"/>
+			<Key time="0.218" fixedGrad="true" repeat="false" valueLower="2.095" valueUpper="10.695" lgradLower="3.402" lgradUpper="3.402" rgradLower="2.266" rgradUpper="4.406"/>
+			<Key time="0.613" fixedGrad="true" repeat="false" valueLower="2.402" valueUpper="11.171" lgradLower="-0.278" lgradUpper="0.0" rgradLower="-0.358" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="2.189" valueUpper="10.49" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="angle" similar="true" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.041" valueUpper="0.397" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+			<Key time="0.002" fixedGrad="true" repeat="false" valueLower="0.041" valueUpper="0.397" lgradLower="0.0" lgradUpper="0.0" rgradLower="-0.01" rgradUpper="0.071"/>
+			<Key time="0.553" fixedGrad="true" repeat="false" valueLower="0.117" valueUpper="1.14" lgradLower="0.02" lgradUpper="0.029" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="0.052" valueUpper="0.622" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="15.513" valueUpper="15.513" lgradLower="0.0" lgradUpper="0.0" rgradLower="23.384" rgradUpper="23.384" rightCurveMode="linear"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="38.874" valueUpper="38.874" lgradLower="23.384" lgradUpper="23.384" rgradLower="0.0" rgradUpper="0.0" leftCurveMode="linear"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="38.874" valueUpper="38.874" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="255.0" valueUpper="255.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="1243.374"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.442" fixedGrad="false" repeat="true"/>
+			<Key time="0.727" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="124.573" valueUpper="228.75"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="173.471" valueUpper="255.0"/>
+			<Key time="0.442" fixedGrad="false" repeat="false" valueLower="178.0" valueUpper="227.824"/>
+			<Key time="0.727" fixedGrad="false" repeat="false" valueLower="168.941" valueUpper="236.882"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="158.75" valueUpper="158.75"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="47.389"/>
+			<Key time="0.442" fixedGrad="false" repeat="false" valueLower="10.62" valueUpper="99.778"/>
+			<Key time="0.727" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="65.758"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="-143.577" rgradUpper="-312.233"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="58.582" valueUpper="99.987"/>
+			<Key time="0.442" fixedGrad="false" repeat="false" valueLower="36.293" valueUpper="67.566"/>
+			<Key time="0.727" fixedGrad="false" repeat="false" valueLower="26.237" valueUpper="71.618"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="1.261" valueUpper="2.062" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.943" rgradUpper="0.943"/>
+			<Key time="0.223" fixedGrad="true" repeat="false" valueLower="1.362" valueUpper="2.305" lgradLower="0.0" lgradUpper="1.954" rgradLower="0.0" rgradUpper="1.954"/>
+			<Key time="0.658" fixedGrad="true" repeat="false" valueLower="1.359" valueUpper="2.464" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="1.046" valueUpper="1.928" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="2" name="Shine2" numOfParticles="1" lifeInitial="3.0" lifeVariation="0.0" pauseAverage="0.0" pauseVariation="0.0" startTime="1.0" deadCountTime="0.0" bornTime="-0.5" blendMode="add" linkedParticles="false" needStartDeadCounter="true" orientParticles="false" isVelocity="true" isEqual="true" isHidden="false" localLinkCoordinates="true" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="32" textureHeight="32" hotPointX="0.5" hotPointY="0.5" texture="textures/particles/backlight" emitterType="point" emitterAngle="0.0" emitterRange="0.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="true" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false" emitterLink="5">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="1.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="5.716" valueUpper="13.064" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.131" rgradUpper="0.203"/>
+			<Key time="0.218" fixedGrad="true" repeat="false" valueLower="6.883" valueUpper="15.483" lgradLower="3.402" lgradUpper="3.402" rgradLower="2.266" rgradUpper="4.406"/>
+			<Key time="0.613" fixedGrad="true" repeat="false" valueLower="7.214" valueUpper="15.983" lgradLower="-0.278" lgradUpper="0.0" rgradLower="-0.358" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="6.993" valueUpper="15.294" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="angle" similar="true" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.041" valueUpper="0.397" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+			<Key time="0.002" fixedGrad="true" repeat="false" valueLower="0.041" valueUpper="0.397" lgradLower="0.0" lgradUpper="0.0" rgradLower="-0.01" rgradUpper="0.071"/>
+			<Key time="0.553" fixedGrad="true" repeat="false" valueLower="0.117" valueUpper="1.14" lgradLower="0.02" lgradUpper="0.029" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="0.052" valueUpper="0.622" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="15.513" valueUpper="15.513" lgradLower="0.0" lgradUpper="0.0" rgradLower="23.384" rgradUpper="23.384" rightCurveMode="linear"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="38.874" valueUpper="38.874" lgradLower="23.384" lgradUpper="23.384" rgradLower="0.0" rgradUpper="0.0" leftCurveMode="linear"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="38.874" valueUpper="38.874" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="255.0" valueUpper="255.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="1243.374"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.442" fixedGrad="false" repeat="true"/>
+			<Key time="0.727" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="124.573" valueUpper="228.75"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="173.471" valueUpper="255.0"/>
+			<Key time="0.442" fixedGrad="false" repeat="false" valueLower="178.0" valueUpper="227.824"/>
+			<Key time="0.727" fixedGrad="false" repeat="false" valueLower="168.941" valueUpper="236.882"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="158.75" valueUpper="158.75"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="47.389"/>
+			<Key time="0.442" fixedGrad="false" repeat="false" valueLower="10.62" valueUpper="99.778"/>
+			<Key time="0.727" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="65.758"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="-143.577" rgradUpper="-312.233"/>
+			<Key time="0.177" fixedGrad="false" repeat="false" valueLower="58.582" valueUpper="99.987"/>
+			<Key time="0.442" fixedGrad="false" repeat="false" valueLower="36.293" valueUpper="67.566"/>
+			<Key time="0.727" fixedGrad="false" repeat="false" valueLower="26.237" valueUpper="71.618"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.739" valueUpper="1.54" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.943" rgradUpper="0.943"/>
+			<Key time="0.223" fixedGrad="true" repeat="false" valueLower="0.838" valueUpper="1.781" lgradLower="0.0" lgradUpper="1.954" rgradLower="0.0" rgradUpper="1.954"/>
+			<Key time="0.658" fixedGrad="true" repeat="false" valueLower="0.834" valueUpper="1.939" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.517" valueUpper="1.399" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="3" name="ring" numOfParticles="3" lifeInitial="2.0" lifeVariation="0.6" pauseAverage="0.0" pauseVariation="0.0" startTime="1.0" deadCountTime="0.0" bornTime="-0.4" blendMode="add" linkedParticles="false" needStartDeadCounter="true" orientParticles="true" isVelocity="true" isEqual="true" isHidden="false" localLinkCoordinates="true" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="128" textureHeight="128" hotPointX="0.5" hotPointY="0.53" texture="textures/particles/common/circle_half_soft" emitterType="point" emitterAngle="178.0" emitterRange="0.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="false" isEqualCreateTime="true" compensateHotpoint="false" showEmitter="false" emitterLink="5">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="size" similar="true" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.259" valueUpper="1.657" lgradLower="0.0" lgradUpper="0.0" rgradLower="3.8" rgradUpper="3.8"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="1.938" valueUpper="3.899" lgradLower="0.256" lgradUpper="0.256" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="1.938" valueUpper="3.899" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+		</Param>
+		<Param name="angle" similar="true" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="-37.437" valueUpper="37.437" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="3.002" valueUpper="6.634" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.161" valueUpper="0.161" lgradLower="0.0" lgradUpper="0.0" rgradLower="1.059" rgradUpper="1.059"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.659" valueUpper="0.659" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="119.118" valueUpper="255.0"/>
+			<Key time="0.088" fixedGrad="false" repeat="false" valueLower="119.137" valueUpper="255.0"/>
+			<Key time="0.391" fixedGrad="false" repeat="false" valueLower="120.29" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="123.647" valueUpper="255.0"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="119.118" valueUpper="209.706"/>
+			<Key time="0.088" fixedGrad="false" repeat="false" valueLower="119.118" valueUpper="209.898"/>
+			<Key time="0.391" fixedGrad="false" repeat="false" valueLower="119.118" valueUpper="221.428"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="119.118" valueUpper="255.0"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="131.353" valueUpper="255.0"/>
+			<Key time="0.088" fixedGrad="false" repeat="false" valueLower="131.334" valueUpper="255.0"/>
+			<Key time="0.391" fixedGrad="false" repeat="false" valueLower="130.181" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="126.824" valueUpper="255.0"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.088" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="90.456" lgradUpper="338.267" rgradLower="90.456" rgradUpper="40.883"/>
+			<Key time="0.391" fixedGrad="false" repeat="false" valueLower="53.569" valueUpper="102.678"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="4" name="Glowparts" numOfParticles="9" lifeInitial="2.0" lifeVariation="1.0" pauseAverage="0.48" pauseVariation="0.0" startTime="2.0" deadCountTime="0.0" bornTime="-0.9" blendMode="add" linkedParticles="true" needStartDeadCounter="true" orientParticles="false" isVelocity="true" isEqual="true" isHidden="false" localLinkCoordinates="false" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="64" textureHeight="64" hotPointX="0.5" hotPointY="0.5" texture="textures/particles/4star" emitterType="point" emitterAngle="83.0" emitterRange="115.0" emitterOrientation="360.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterLink="-1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="false" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="-329.293" rgradUpper="508.771"/>
+			<Key time="0.305" fixedGrad="true" repeat="false" valueLower="-100.123" valueUpper="100.123" lgradLower="242.243" lgradUpper="-319.071" rgradLower="368.176" rgradUpper="-437.405"/>
+			<Key time="0.552" fixedGrad="true" repeat="false" valueLower="-100.463" valueUpper="100.463" lgradLower="223.094" lgradUpper="-246.792" rgradLower="155.842" rgradUpper="-162.974"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="-40.314" valueUpper="40.314" lgradLower="21.089" lgradUpper="21.089" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="142.618" rgradUpper="142.618"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="166.874" valueUpper="166.874" lgradLower="-11.705" lgradUpper="-11.705" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="166.874" valueUpper="166.874" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.063" valueUpper="0.063" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+			<Key time="0.251" fixedGrad="true" repeat="false" valueLower="0.063" valueUpper="0.063" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.24" rgradUpper="1.056"/>
+			<Key time="0.42" fixedGrad="true" repeat="false" valueLower="0.312" valueUpper="0.712" lgradLower="0.328" lgradUpper="0.328" rgradLower="0.327" rgradUpper="0.327"/>
+			<Key time="0.646" fixedGrad="true" repeat="false" valueLower="0.294" valueUpper="0.538" lgradLower="-0.601" lgradUpper="-1.193" rgradLower="-0.645" rgradUpper="-0.977"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.082" valueUpper="0.082" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="angle" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="97.432" valueUpper="276.43" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+			<Key time="0.002" fixedGrad="true" repeat="false" valueLower="97.432" valueUpper="276.43" lgradLower="0.0" lgradUpper="0.0" rgradLower="-427.506" rgradUpper="-1382.005"/>
+			<Key time="0.42" fixedGrad="true" repeat="false" valueLower="29.503" valueUpper="48.048" lgradLower="-91.182" lgradUpper="-112.52" rgradLower="-80.542" rgradUpper="-80.542"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="10.241" valueUpper="10.241" lgradLower="-11.861" lgradUpper="-11.861" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.169" fixedGrad="false" repeat="true"/>
+			<Key time="0.3" fixedGrad="false" repeat="true"/>
+			<Key time="0.364" fixedGrad="false" repeat="true"/>
+			<Key time="0.434" fixedGrad="false" repeat="true"/>
+			<Key time="0.478" fixedGrad="false" repeat="true"/>
+			<Key time="0.52" fixedGrad="false" repeat="true"/>
+			<Key time="0.574" fixedGrad="false" repeat="true"/>
+			<Key time="0.649" fixedGrad="false" repeat="true"/>
+			<Key time="0.717" fixedGrad="false" repeat="true"/>
+			<Key time="0.762" fixedGrad="false" repeat="true"/>
+			<Key time="0.834" fixedGrad="false" repeat="true"/>
+			<Key time="0.917" fixedGrad="false" repeat="true"/>
+			<Key time="0.949" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.169" fixedGrad="false" repeat="false" valueLower="254.335" valueUpper="254.335"/>
+			<Key time="0.3" fixedGrad="false" repeat="false" valueLower="246.347" valueUpper="246.347"/>
+			<Key time="0.364" fixedGrad="true" repeat="false" valueLower="232.492" valueUpper="232.492" lgradLower="-77.715" lgradUpper="-77.715" rgradLower="-47.33" rgradUpper="-47.33"/>
+			<Key time="0.434" fixedGrad="true" repeat="false" valueLower="219.854" valueUpper="219.854" lgradLower="-45.665" lgradUpper="-45.665" rgradLower="-45.665" rgradUpper="-45.665"/>
+			<Key time="0.478" fixedGrad="true" repeat="false" valueLower="202.426" valueUpper="202.426" lgradLower="-53.514" lgradUpper="-53.514" rgradLower="-53.514" rgradUpper="-53.514"/>
+			<Key time="0.52" fixedGrad="true" repeat="false" valueLower="153.524" valueUpper="153.524" lgradLower="-46.441" lgradUpper="-46.441" rgradLower="-46.441" rgradUpper="-46.441"/>
+			<Key time="0.574" fixedGrad="true" repeat="false" valueLower="206.439" valueUpper="206.439" lgradLower="-39.354" lgradUpper="-39.354" rgradLower="-39.354" rgradUpper="-39.354"/>
+			<Key time="0.649" fixedGrad="true" repeat="false" valueLower="146.783" valueUpper="146.783" lgradLower="-41.202" lgradUpper="-41.202" rgradLower="-41.202" rgradUpper="-41.202"/>
+			<Key time="0.717" fixedGrad="true" repeat="false" valueLower="140.87" valueUpper="140.87" lgradLower="-38.879" lgradUpper="-38.879" rgradLower="-38.879" rgradUpper="-38.879"/>
+			<Key time="0.762" fixedGrad="true" repeat="false" valueLower="198.726" valueUpper="198.726" lgradLower="-27.381" lgradUpper="-27.381" rgradLower="-27.381" rgradUpper="-27.381"/>
+			<Key time="0.834" fixedGrad="true" repeat="false" valueLower="197.726" valueUpper="197.726" lgradLower="-34.352" lgradUpper="-34.352" rgradLower="-34.352" rgradUpper="-34.352"/>
+			<Key time="0.917" fixedGrad="true" repeat="false" valueLower="192.272" valueUpper="192.272" lgradLower="-57.706" lgradUpper="-57.706" rgradLower="-57.706" rgradUpper="-57.706"/>
+			<Key time="0.949" fixedGrad="true" repeat="false" valueLower="117.981" valueUpper="117.981" lgradLower="-36.214" lgradUpper="-36.214" rgradLower="-36.214" rgradUpper="-36.214"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="89.728" valueUpper="89.728" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="255.0" valueUpper="255.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="-95.726" rgradUpper="-95.726"/>
+			<Key time="0.169" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.3" fixedGrad="false" repeat="true"/>
+			<Key time="0.364" fixedGrad="true" repeat="false" valueLower="182.18" valueUpper="182.18" lgradLower="-763.626" lgradUpper="-763.626" rgradLower="-666.165" rgradUpper="-666.165"/>
+			<Key time="0.434" fixedGrad="true" repeat="false" valueLower="144.343" valueUpper="144.343" lgradLower="-232.613" lgradUpper="-232.613" rgradLower="-232.613" rgradUpper="-232.613"/>
+			<Key time="0.478" fixedGrad="true" repeat="false" valueLower="83.837" valueUpper="83.837" lgradLower="-167.015" lgradUpper="-167.015" rgradLower="-167.015" rgradUpper="-167.015"/>
+			<Key time="0.52" fixedGrad="true" repeat="false" valueLower="64.431" valueUpper="64.431" lgradLower="-91.127" lgradUpper="-91.127" rgradLower="-91.127" rgradUpper="-91.127"/>
+			<Key time="0.574" fixedGrad="true" repeat="false" valueLower="61.896" valueUpper="61.896" lgradLower="-70.974" lgradUpper="-70.974" rgradLower="-70.974" rgradUpper="-70.974"/>
+			<Key time="0.649" fixedGrad="true" repeat="false" valueLower="52.237" valueUpper="52.237" lgradLower="-74.71" lgradUpper="-74.71" rgradLower="-74.71" rgradUpper="-74.71"/>
+			<Key time="0.717" fixedGrad="true" repeat="false" valueLower="49.728" valueUpper="49.728" lgradLower="-70.507" lgradUpper="-70.507" rgradLower="-70.507" rgradUpper="-70.507"/>
+			<Key time="0.762" fixedGrad="true" repeat="false" valueLower="47.866" valueUpper="47.866" lgradLower="-49.654" lgradUpper="-49.654" rgradLower="-49.654" rgradUpper="-49.654"/>
+			<Key time="0.834" fixedGrad="true" repeat="false" valueLower="46.053" valueUpper="46.053" lgradLower="-62.281" lgradUpper="-62.281" rgradLower="-62.281" rgradUpper="-62.281"/>
+			<Key time="0.917" fixedGrad="true" repeat="false" valueLower="36.164" valueUpper="36.164" lgradLower="-104.644" lgradUpper="-104.644" rgradLower="-104.644" rgradUpper="-104.644"/>
+			<Key time="0.949" fixedGrad="true" repeat="false" valueLower="32.863" valueUpper="32.863" lgradLower="-65.668" lgradUpper="-65.668" rgradLower="-75.275" rgradUpper="-75.275"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="30.625" valueUpper="30.625"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="0.169" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="295.463" lgradUpper="295.463" rgradLower="17.886" rgradUpper="17.886"/>
+			<Key time="0.3" fixedGrad="true" repeat="false" valueLower="255.0" valueUpper="255.0" lgradLower="1265.205" lgradUpper="1265.205" rgradLower="796.404" rgradUpper="796.404"/>
+			<Key time="0.364" fixedGrad="true" repeat="false" valueLower="162.167" valueUpper="162.167" lgradLower="217.755" lgradUpper="217.755" rgradLower="217.755" rgradUpper="217.755"/>
+			<Key time="0.434" fixedGrad="true" repeat="false" valueLower="210.292" valueUpper="210.292" lgradLower="-1436.426" lgradUpper="-1436.426" rgradLower="-1221.411" rgradUpper="-1221.411"/>
+			<Key time="0.478" fixedGrad="true" repeat="false" valueLower="42.553" valueUpper="42.553" lgradLower="-602.067" lgradUpper="-602.067" rgradLower="-602.067" rgradUpper="-602.067"/>
+			<Key time="0.52" fixedGrad="true" repeat="false" valueLower="158.744" valueUpper="158.744" lgradLower="2290.203" lgradUpper="2290.203" rgradLower="2290.203" rgradUpper="2290.203"/>
+			<Key time="0.574" fixedGrad="true" repeat="false" valueLower="210.292" valueUpper="210.292" lgradLower="-926.821" lgradUpper="-926.821" rgradLower="-1089.977" rgradUpper="-1089.977"/>
+			<Key time="0.649" fixedGrad="true" repeat="false" valueLower="43.627" valueUpper="43.627" lgradLower="451.029" lgradUpper="451.029" rgradLower="451.029" rgradUpper="451.029"/>
+			<Key time="0.717" fixedGrad="true" repeat="false" valueLower="151.529" valueUpper="151.529" lgradLower="604.038" lgradUpper="604.038" rgradLower="604.038" rgradUpper="604.038"/>
+			<Key time="0.762" fixedGrad="true" repeat="false" valueLower="68.112" valueUpper="68.112" lgradLower="-147.477" lgradUpper="-147.477" rgradLower="-147.477" rgradUpper="-147.477"/>
+			<Key time="0.834" fixedGrad="true" repeat="false" valueLower="178.67" valueUpper="178.67" lgradLower="-846.298" lgradUpper="-846.298" rgradLower="-846.298" rgradUpper="-846.298"/>
+			<Key time="0.917" fixedGrad="true" repeat="false" valueLower="4.667" valueUpper="4.667" lgradLower="-1557.585" lgradUpper="-1557.585" rgradLower="-1557.585" rgradUpper="-1557.585"/>
+			<Key time="0.949" fixedGrad="true" repeat="false" valueLower="84.836" valueUpper="84.836" lgradLower="-55.29" lgradUpper="-55.29" rgradLower="-56.664" rgradUpper="-56.664"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="5" name="NULL" numOfParticles="1" lifeInitial="1.0" lifeVariation="0.0" pauseAverage="0.0" pauseVariation="0.0" startTime="0.0" deadCountTime="0.0" bornTime="0.0" blendMode="alpha" linkedParticles="true" needStartDeadCounter="true" orientParticles="false" isVelocity="false" isEqual="false" isHidden="true" localLinkCoordinates="false" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="32" textureHeight="32" hotPointX="0.5" hotPointY="0.5" texture="textures/particles/backlight" emitterType="point" emitterAngle="0.0" emitterRange="0.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterLink="-1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="false" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+			<Key time="0.009" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="8.551" rgradUpper="8.551"/>
+			<Key time="0.218" fixedGrad="true" repeat="false" valueLower="1.1" valueUpper="1.1" lgradLower="0.002" lgradUpper="0.002" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.85" valueUpper="0.85" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="angle" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="6" name="leftPortal" numOfParticles="1" lifeInitial="0.5" lifeVariation="0.0" pauseAverage="0.0" pauseVariation="0.0" startTime="0.0" deadCountTime="0.0" bornTime="0.0" blendMode="add" linkedParticles="false" needStartDeadCounter="true" orientParticles="false" isVelocity="false" isEqual="false" isHidden="false" localLinkCoordinates="true" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="64" textureHeight="64" hotPointX="0.5" hotPointY="0.91" texture="textures/particles/common/tunel_light_blur" emitterType="point" emitterAngle="0.0" emitterRange="0.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="true" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false" emitterLink="9">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="1.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.211" fixedGrad="true" repeat="false" valueLower="1.0" valueUpper="1.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.482" fixedGrad="true" repeat="false" valueLower="0.815" valueUpper="0.815" lgradLower="-0.695" lgradUpper="-0.695" rgradLower="-1.062" rgradUpper="-1.062"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="angle" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="90.0" valueUpper="90.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="130.888" valueUpper="130.888"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="false" valueLower="77.697" valueUpper="77.697"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="2.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="30.415" rgradUpper="30.415"/>
+			<Key time="0.224" fixedGrad="true" repeat="false" valueLower="4.727" valueUpper="4.727" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="2.797" valueUpper="2.797" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="7" name="rightPortal" numOfParticles="1" lifeInitial="0.53" lifeVariation="0.0" pauseAverage="0.0" pauseVariation="0.0" startTime="0.0" deadCountTime="0.0" bornTime="0.0" blendMode="add" linkedParticles="false" needStartDeadCounter="true" orientParticles="false" isVelocity="false" isEqual="false" isHidden="false" localLinkCoordinates="true" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="64" textureHeight="64" hotPointX="0.5" hotPointY="0.91" texture="textures/particles/common/tunel_light_blur" emitterType="point" emitterAngle="0.0" emitterRange="0.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="true" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false" emitterLink="9">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="1.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.211" fixedGrad="true" repeat="false" valueLower="1.0" valueUpper="1.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="0.482" fixedGrad="true" repeat="false" valueLower="0.815" valueUpper="0.815" lgradLower="-0.695" lgradUpper="-0.695" rgradLower="-1.062" rgradUpper="-1.062"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="angle" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="270.0" valueUpper="270.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="130.888" valueUpper="130.888"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="false" valueLower="77.697" valueUpper="77.697"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.245" fixedGrad="false" repeat="true"/>
+			<Key time="0.525" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="2.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="0.0" lgradUpper="0.0" rgradLower="30.415" rgradUpper="30.415"/>
+			<Key time="0.224" fixedGrad="true" repeat="false" valueLower="4.727" valueUpper="4.727" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="2.797" valueUpper="2.797" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="8" name="centerStar" numOfParticles="1" lifeInitial="0.4" lifeVariation="0.0" pauseAverage="0.0" pauseVariation="0.0" startTime="0.0" deadCountTime="0.0" bornTime="0.2" blendMode="add" linkedParticles="false" needStartDeadCounter="true" orientParticles="false" isVelocity="false" isEqual="false" isHidden="false" localLinkCoordinates="true" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="64" textureHeight="64" hotPointX="0.5" hotPointY="0.5" texture="textures/particles/common/white_star02" emitterType="point" emitterAngle="0.0" emitterRange="0.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="true" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false" emitterLink="9">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.323" valueUpper="0.323" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.803" rgradUpper="0.803"/>
+			<Key time="0.536" fixedGrad="true" repeat="false" valueLower="9.563" valueUpper="9.563" lgradLower="5.643" lgradUpper="5.643" rgradLower="4.525" rgradUpper="4.525"/>
+			<Key time="0.741" fixedGrad="true" repeat="false" valueLower="9.604" valueUpper="9.604" lgradLower="-1.779" lgradUpper="-1.779" rgradLower="-2.455" rgradUpper="-2.455"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="0.608" valueUpper="0.608" lgradLower="-0.028" lgradUpper="-0.028" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.608" valueUpper="0.608" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+		</Param>
+		<Param name="angle" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.893" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="189.145" valueUpper="189.145"/>
+			<Key time="0.893" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="12.665" valueUpper="12.665"/>
+			<Key time="0.893" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="0.893" fixedGrad="false" repeat="true"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.0" valueUpper="0.0" lgradLower="-2718.559" lgradUpper="-2718.559" rgradLower="0.0" rgradUpper="0.0"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.323" valueUpper="0.323" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.803" rgradUpper="0.803"/>
+			<Key time="0.545" fixedGrad="true" repeat="false" valueLower="2.655" valueUpper="2.655" lgradLower="5.643" lgradUpper="5.643" rgradLower="4.525" rgradUpper="4.525"/>
+			<Key time="0.75" fixedGrad="true" repeat="false" valueLower="2.697" valueUpper="2.697" lgradLower="-1.779" lgradUpper="-1.779" rgradLower="-2.455" rgradUpper="-2.455"/>
+			<Key time="0.924" fixedGrad="true" repeat="false" valueLower="0.646" valueUpper="0.646" lgradLower="-0.939" lgradUpper="-0.939" rgradLower="-0.883" rgradUpper="-0.883"/>
+			<Key time="0.999" fixedGrad="true" repeat="false" valueLower="0.608" valueUpper="0.608" lgradLower="-0.028" lgradUpper="-0.028" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="false" valueLower="0.608" valueUpper="0.608" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0" imaginary="true"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+	<ParticleSystem objectId="9" name="NULL2" numOfParticles="1" lifeInitial="1.0" lifeVariation="0.0" pauseAverage="0.0" pauseVariation="0.0" startTime="0.0" deadCountTime="0.0" bornTime="0.0" blendMode="alpha" linkedParticles="false" needStartDeadCounter="false" orientParticles="false" isVelocity="false" isEqual="false" isHidden="true" localLinkCoordinates="false" usePercentForSpriteSize="true" useFramesForAnimation="false" stayStaticAfterDie="false" particleSortMode="none" isProgram="false" textureWidth="4" textureHeight="4" hotPointX="0.5" hotPointY="0.5" texture="" emitterType="point" emitterAngle="0.0" emitterRange="0.0" emitterOrientation="0.0" lineLength="0" rectWidth="0" rectHeight="0" ellipseRHor="0" ellipseRVert="0" ellipseThickness="0" textureSizeFormat="x1" emitterLink="-1" emitterOffsetX="0.0" emitterOffsetY="0.0" isAnimation="false" frameWidth="1" frameHeight="1" isScaledNonproportional="false" isEqualCreateTime="false" compensateHotpoint="false" showEmitter="false">
+		<Param name="x" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="y" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="size" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="true" repeat="false" valueLower="0.7" valueUpper="0.7" lgradLower="0.0" lgradUpper="0.0" rgradLower="0.0" rgradUpper="0.0"/>
+			<Key time="1.0" fixedGrad="true" repeat="true" imaginary="true"/>
+		</Param>
+		<Param name="angle" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="v" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="spin" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="red" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="green" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="blue" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="alpha" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="255.0" valueUpper="255.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="fps" similar="false" removal="15.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="ySize" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+		<Param name="fpsOrFrames" similar="false" removal="0.0">
+			<Key time="0.0" fixedGrad="false" repeat="false" valueLower="0.0" valueUpper="0.0"/>
+			<Key time="1.0" fixedGrad="false" repeat="true"/>
+		</Param>
+	</ParticleSystem>
+</Effect>
+

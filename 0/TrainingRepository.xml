@@ -1,0 +1,8 @@
+<EffectSolution version="7">
+	<Effect path="QC_Flash1.xml"/>
+	<Effect path="QC_FlashSmall1.xml"/>
+	<Effect path="QC_RewardShine.xml"/>
+	<Effect path="QC_RewardIdle1.xml"/>
+	<Effect path="TEMP_shine.xml"/>
+</EffectSolution>
+
